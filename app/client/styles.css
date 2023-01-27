@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100;200;400&family=Sofia+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*, ::before, ::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root{
+	--primary-1: #276348;
+	--primary-2: #1f4e43;
+	--primary-3: #1c4036;
+	--primary-1-light: #276348f0;
+	--primary-2-light: #1f4e43fa;
+	--primary-3-light: #1c4036f5;
+	--primary-4: #346851;
+}
+body{
+	font-size: 20px;
+	font-family: 'Sofia Sans', sans-serif;;
+}
+nav{
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 10vh;
+	background: var(--primary-1);
+	padding: 0 1em;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	place-items: center;
+}
+nav div{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+nav .logo a{
+	text-decoration: none;
+	color: white;
+}
+nav .logo a span{
+	font-family: 'Pacifico', cursive;
+	font-size: 2em;
+}
+nav .category-icon{
+	justify-content: center;
+}
+nav .category-icon ion-icon{
+	font-size: 1.5em;
+	color: white;
+}
+nav .links{
+	justify-content: flex-end;
+} 
+nav .links a{
+	color: white;
+	text-decoration: none;
+}
+nav .links #search{
+	margin: .4em 2em 0 0;
+}
+nav .links #search ion-icon{
+	font-size: .9em;
+	border: 2px solid white;
+	border-radius: 50%;
+	padding: .3em;
+}
+nav .links #signin-signup{
+	border: 2px solid white;
+	padding: .2em .4em;
+	border-radius: 1.8em;
+}
+section{
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+#home{
+	height: 93vh;
+}
+#home .job{
+	width: 100%;
+	height: 100%;
+	background: var(--primary-1-light);
+}
+#home .job:hover{
+	background: var(--primary-1);
+}
+section .labour{
+	width: 100%;
+	height: 100%;
+	background: var(--primary-2-light);
+}
+section .labour:hover{
+	background: var(--primary-2);
+}
+section .categories{
+	width: 100%;
+	height: 100%;
+	background: var(--primary-3-light);
+}
+section .categories:hover{
+	background: var(--primary-3);
+}
+section #categories img{
+	opacity: .1;
+}
