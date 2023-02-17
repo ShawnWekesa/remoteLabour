@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?ffamily=Sofia+Sans:wght@300;400;500&display=swap');
+
+*, ::before, ::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root{
+	--primary-1: #276348;
+	--primary-2: #1f4e43;
+	--primary-3: #1c4036;
+	--primary-1-light: #276348f0;
+	--primary-2-light: #1f4e43fa;
+	--primary-3-light: #1c4036f5;
+	--primary-4: #346851;
+}
+
+body{
+	font-size: 19px;
+	font-family: 'Sofia Sans', sans-serif;
+}

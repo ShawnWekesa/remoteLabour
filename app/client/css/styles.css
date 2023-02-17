@@ -21,14 +21,14 @@
 	--remote-tag-bg: #ff79e42e;
 	--freelance-tag: #51d0c4;
 	--freelance-tag-bg: #73e3d91f;
-	--permanent-tag: #d0b651;
-	--permanent-tag-bg: #f9df7d36;
+	--full-time-tag: #d0b651;
+	--full-time-tag-bg: #f9df7d36;
 	--contract-tag: #5153d0;
 	--contract-tag-bg: #8e90ff2e;
 }
 body{
 	font-size: 19px;
-	font-family: 'Sofia Sans', sans-serif;;
+	font-family: 'Sofia Sans', sans-serif;
 }
 nav{
 /*	position: sticky;*/
@@ -426,10 +426,10 @@ section{
 	background: var(--contract-tag-bg);
 	outline: 1px solid var(--contract-tag);
 }
-#available-jobs .available-job-card .info .aaaaa .job-tags .permanent{
-	color: var(--permanent-tag);
-	background: var(--permanent-tag-bg);
-	outline: 1px solid var(--permanent-tag);
+#available-jobs .available-job-card .info .aaaaa .job-tags .full-time{
+	color: var(--full-time-tag);
+	background: var(--full-time-tag-bg);
+	outline: 1px solid var(--full-time-tag);
 }
 #available-jobs .available-job-card .info .job-description .job-name{
 	font-family: 'M PLUS Rounded 1c', sans-serif;
@@ -462,4 +462,20 @@ section{
 	color: var(--primary-1);
 	display: flex;
 	align-items: center;
+}
+footer{
+	background: var(--primary-2);
+	padding: 1em;
+	color: white;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: .5em;
+}
+footer a{
+	color: white;
+	text-decoration: none;
+}
+footer p{
+	text-align: center;
 }
