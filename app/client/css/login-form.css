@@ -19,4 +19,66 @@
 body{
 	font-size: 19px;
 	font-family: 'Sofia Sans', sans-serif;
+	background: var(--primary-4);
+	/*display: flex;
+	align-items: center;
+	justify-content: center;*/
+}
+section{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	gap: 2em;
+	align-items: center;
+	justify-content: center;
+}
+form{
+	display: flex;
+	gap: .5em;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: white;
+	padding: 1em;
+	border-radius: .25em;
+}
+form > div{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+form > div ion-icon{
+	position: absolute;
+	right: .5em;
+}
+form label,
+input::placeholder,
+form a,
+form button,
+form > div ion-icon{
+	color: var(--primary-1);
+}
+form input{
+	height: 3em;
+	width: 100%;
+	padding: .5em;
+	border: 1px solid var(--primary-1);
+	border-radius: .25em;
+}
+form input:focus{
+	border-bottom-width: 2px;
+	outline: none;
+}
+form button{
+	width: 100%;
+/*	height: 3em;*/
+	background: var(--primary-3-light);
+	border: none;
+	outline: none;
+	border-radius: .25em;
+	color: white;
+	font-size: 1.2em;
+	padding: .2em 0;
 }
