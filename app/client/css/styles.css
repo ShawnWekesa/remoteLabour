@@ -38,9 +38,9 @@ nav{
 	height: 3.5em;
 	background: var(--primary-1);
 	padding: 0 1em;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	place-items: center;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	z-index: 100000;
 }
 nav div{
@@ -123,6 +123,7 @@ section{
 	display: flex;
 	flex-direction: row;
 	overflow: hidden;
+	flex-wrap: wrap;
 }
 #home > div{
 	width: calc(100% / 3);
@@ -131,9 +132,6 @@ section{
 	position: relative;
 	overflow: hidden;
 	transition: width .2s ease-in-out;
-}
-#home > div:hover{
-	width: 50em;
 }
 #home .job{
 	background: var(--primary-1-light);
@@ -145,17 +143,17 @@ section{
 #home > div h1{
 	font-size: 3em;
 	color: white;
-	margin-top: .4em;
+	margin-top: .61em;
 	z-index: 500;
 }
 #home > div p{
 	font-size: 1.5em;
 	color: white;
-	margin: .5em 0;
+	margin: .8em 0;
 	z-index: 500;
 }
 #home > div .p-two{
-	font-size: .9em;
+	font-size: 1em;
 }
 #home .job .images,
 #home .labour .images{
@@ -166,13 +164,12 @@ section{
 #home .labour .images img{
 	position: absolute;
 	z-index: -2;
-	width: 10em;
+	width: 8em;
 	transition: all .1s ease-in;
 	opacity: 0;
 }
 #home .job .images img:nth-child(1){
 	top: -14em;
-	right: 23em;
 }
 #home .job .images img:nth-child(2){
 	top: 1em;
@@ -188,13 +185,13 @@ section{
 }
 #home .job .images img:nth-child(4){
 	width: 8em;
-	top: 9em;
-	right: 4.5em;
+	top: 5em;
+	right: .5em;
 }
 #home .job .images img:nth-child(5){
 	width: 4em;
-	top: 5em;
-	right: 13em;
+	top: 0em;
+	right: 2em;
 }
 #home .job .images img:nth-child(6){
 	width: 4em;
@@ -256,23 +253,23 @@ section{
 }
 #home .labour .images img:nth-child(2){
 	width: 8em;
-	top: -17em;
-	right: 25.5em;
+	top: -23em;
+	right: 15.5em;
 }
 #home .labour .images img:nth-child(3){
 	width: 8em;
 	top: -1em;
-	right: 25em;
+	right: 3em;
 }
 #home .labour .images img:nth-child(4){
 	width: 11em;
 	top: 1em;
-	right: 13em;
+	right: 12em;
 }
 #home .labour .images img:nth-child(5){
 	width: 6em;
-	top: 7em;
-	right: 2em;
+	top: 5em;
+	right: -.5em;
 }
 #home .categories{
 	background: var(--primary-3-light);
@@ -284,6 +281,9 @@ section{
 #home .categories a:hover{
 	background: white;
 	color: var(--primary-3);
+}
+#home .images{
+	width: 100%;
 }
 #categories{
 	display: flex;
@@ -364,8 +364,10 @@ section{
 #categories .labour-categories a:hover{
 	text-decoration: underline;
 }
-#available-jobs{
-	background: var(--primary-1-light);
+#available-jobs > div{
+	width: 100%;
+	height: 100%;
+	background: var(--primary-1);
 	padding: 2em 1em;
 	display: flex;
 	flex-direction: column;
