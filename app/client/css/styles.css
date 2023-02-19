@@ -31,7 +31,7 @@ body{
 	font-family: 'Sofia Sans', sans-serif;
 }
 nav{
-/*	position: sticky;*/
+	position: sticky;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -78,19 +78,31 @@ nav .links a{
 	color: white;
 	text-decoration: none;
 }
-nav .links #search{
+nav .links .search{
 	margin: .4em 2em 0 0;
+	display: flex;
+	gap: .2em;
 }
-nav .links #search ion-icon{
+nav .links .search ion-icon{
 	font-size: .9em;
 	border: 2px solid white;
 	border-radius: 50%;
 	padding: .3em;
 	transition: all .1s ease-in;
 }
-nav .links #search ion-icon:hover{
+nav .links .search ion-icon:hover{
 	color: var(--primary-1);
 	background: white;
+}
+nav .links .search input{
+	height: 2.4em;
+	border: none;
+	outline: none;
+	border-radius: 1em;
+	padding: .5em;
+}
+nav .links .search input.hide{
+	display: none;
 }
 nav .links #signin-signup{
 	border: 2px solid white;
