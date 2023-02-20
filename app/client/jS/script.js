@@ -6,8 +6,6 @@ const searchBox = document.querySelector("#search");
       nav = document.querySelector("nav");
       divs = document.querySelectorAll("section > div");
 
-      console.log(divs)
-
 searchIcon.addEventListener("click", () =>{
 	searchBox.classList.toggle("hide");
 })
