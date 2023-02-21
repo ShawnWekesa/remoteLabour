@@ -56,6 +56,7 @@ nav .logo a{
 nav .logo a span{
 	font-family: 'Pacifico', cursive;
 	font-size: 2em;
+	white-space: nowrap;
 }
 nav .category-icon{
 	justify-content: center;
@@ -417,6 +418,7 @@ section{
 	display: flex;
 	gap: .1em;
 	flex-direction: column;
+	justify-content: space-evenly;
 }
 #available-jobs .available-job-card .info .aaaaa{
 	display: flex;
@@ -467,31 +469,37 @@ section{
 }
 #available-jobs .available-job-card .bbbbb{
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
-	width: 60%;
+/*	width: 60%;*/
 }
 #available-jobs .available-job-card .bbbbb > div{
 	display: flex;
 	gap: .5em;
 	font-size: .9em;
+	width: 100%;
 }
 #available-jobs .available-job-card .bbbbb > div .pay{
 	color: green;
 	font-family: 'Signika Negative', sans-serif;
+	white-space: nowrap;
 }
 #available-jobs .available-job-card .bbbbb > div .period{
 	color: green;
 	font-family: 'Signika Negative', sans-serif;
+	white-space: nowrap;
 }
 #available-jobs .available-job-card .bbbbb > div .date{
 	color: green;
 	font-family: 'PT Mono', monospace;
 	font-size: .9em;
+	white-space: nowrap;
 }
 #available-jobs .available-job-card .bbbbb a{
 	color: var(--primary-1);
-	display: flex;
-	align-items: center;
+	white-space: nowrap;
+	/*display: flex;
+	align-items: center;*/
 }
 footer{
 	background: var(--primary-2);
@@ -510,6 +518,7 @@ footer p{
 	text-align: center;
 }
 
+
 @media only screen and (max-width: 1220px) {
   #categories .category-links .links a:nth-child(8),
   #categories .category-links .links a:nth-child(9),
@@ -518,7 +527,7 @@ footer p{
   	display: none;
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px ) and (min-width: 770px) {
 	#available-jobs .available-job-card .job-description{
 		padding: .3em;
 		height: 3em;
@@ -584,5 +593,20 @@ footer p{
 	#home > div h1{
 	 	font-size: 2em;
 		margin-top: 0em;
+	}
+}
+@media only screen and (max-width: 769px){
+	#available-jobs .available-job-card .pfp{
+		min-height: 5em;
+	}
+	#available-jobs .available-job-card .job-description{
+		height: auto;
+		width: 100%;
+		white-space: normal;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+	#available-jobs .available-job-card .job-description.display-none{
+		display: none;
 	}
 }

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?ffamily=Sofia+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+*, ::before, ::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root{
+	--primary-1: #276348;
+	--primary-2: #1f4e43;
+	--primary-3: #1c4036;
+	--primary-1-light: #276348f0;
+	--primary-2-light: #1f4e43fa;
+	--primary-3-light: #1c4036f5;
+	--primary-4: #346851;
+	--remote-tag: #9d448b;
+	--remote-tag-bg: #ff79e42e;
+	--freelance-tag: #51d0c4;
+	--freelance-tag-bg: #73e3d91f;
+	--full-time-tag: #d0b651;
+	--full-time-tag-bg: #f9df7d36;
+	--contract-tag: #5153d0;
+	--contract-tag-bg: #8e90ff2e;
+}
+body{
+	font-size: 19px;
+	font-family: 'Sofia Sans', sans-serif;
+}
+nav{
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 3.5em;
+	background: var(--primary-1);
+	padding: 0 1em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 100000;
+}
+nav > div{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+nav .logo a{
+	text-decoration: none;
+	color: white;
+}
+nav .logo a span{
+	font-family: 'Pacifico', cursive;
+	font-size: 2em;
+	white-space: nowrap;
+}
+nav .category-icon{
+	justify-content: center;
+}
+nav .category-icon ion-icon{
+	font-size: 1.5em;
+	color: white;
+	padding: .3em;
+	border-radius: 50%;
+	transition: all .1s ease-in;
+}
+nav .category-icon ion-icon:hover{
+	background: white;
+	color: var(--primary-1);
+}
+nav .links{
+	justify-content: flex-end;
+} 
+nav .links a{
+	color: white;
+	text-decoration: none;
+}
+nav .links .search{
+	margin: .4em 2em 0 0;
+	display: flex;
+	gap: .2em;
+}
+nav .links .search ion-icon{
+	color: white;
+	font-size: .9em;
+	border: 2px solid white;
+	border-radius: 50%;
+	padding: .3em;
+	transition: all .1s ease-in;
+}
+nav .links .search ion-icon:hover{
+	color: var(--primary-1);
+	background: white;
+}
+nav .links .search input{
+	height: 2.4em;
+	border: none;
+	outline: none;
+	border-radius: 1em;
+	padding: .5em;
+}
+nav .links .search input.hide{
+	display: none;
+}
