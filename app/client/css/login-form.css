@@ -82,6 +82,9 @@ form button{
 form button:hover{
 	background: var(--primary-3);
 }
+.forgot-password button{
+	font-size: .9em;
+}
 form span{
 	font-size: .8em;
 }
