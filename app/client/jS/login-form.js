@@ -1,7 +1,9 @@
 console.log('hi')
 const passwordInputFields = document.querySelectorAll('.password-input-field');
-	forms = document.querySelectorAll("form");
+	forms = document.querySelectorAll(".form");
 	links = document.querySelectorAll(".link");
+  forgotPasswordLink = document.querySelector(".forgot-password-link");
+  forgotPasswordForm = document.querySelector(".forgot-password");
 
 passwordInputFields.forEach((passwordInput) => {
   const eyeOffIcon = passwordInput.parentElement.querySelector('ion-icon[name="eye-off-outline"]');
@@ -23,7 +25,6 @@ function togglePasswordVisibility(passwordInput, eyeOffIcon, eyeIcon) {
   }
 }
 
-
 links.forEach(link => {
 	link.addEventListener("click", () =>{
 		forms.forEach(form => {
@@ -36,4 +37,11 @@ forms.forEach(form => {
   form.addEventListener('submit', function(event) {
     event.preventDefault();
   });
+});
+
+forgotPasswordLink.addEventListener('click', () => {
+  forgotPasswordForm.classList.remove('display-none');
+  forms.forEach(form => {
+    form.classList.add('display-none');
+  })
 });
