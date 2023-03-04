@@ -76,33 +76,6 @@ nav .links a{
 	color: white;
 	text-decoration: none;
 }
-nav .links .search{
-	margin: .4em 2em 0 0;
-	display: flex;
-	gap: .2em;
-}
-nav .links .search ion-icon{
-	color: white;
-	font-size: .9em;
-	border: 2px solid white;
-	border-radius: 50%;
-	padding: .3em;
-	transition: all .1s ease-in;
-}
-nav .links .search ion-icon:hover{
-	color: var(--primary-1);
-	background: white;
-}
-nav .links .search input{
-	height: 2.4em;
-	border: none;
-	outline: none;
-	border-radius: 1em;
-	padding: .5em;
-}
-nav .links .search input.hide{
-	display: none;
-}
 nav .links #signin-signup{
 	white-space: nowrap;
 	border: 2px solid white;
@@ -113,20 +86,36 @@ nav .links #signin-signup{
 nav .links #signin-signup:hover{
 	background: white;
 	color: var(--primary-1);
-	display: none;
 }
 nav .profile-popup{
 	position: relative;
+	display: none;
+}
+nav .profile-popup .popup-toggle{
+	position: absolute;
+	width: 2.2em;
+	height: 2.2em;
+	border-radius: 50%;
+	overflow: hidden;
+	right: 0;
+	cursor: pointer;
+}
+nav .profile-popup .popup-toggle img{
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	object-fit: cover;
 }
 nav .profile-popup .popup-content{
 	position: absolute;
 	top: .2em;
-	right: .2em;
+	right: 0;
 	display: flex;
 	flex-direction: column;
 	background: white;
 	padding: .4em;
 	border-radius: .3em;
+	display: none;
 }
 nav .profile-popup .popup-content .profile-info{
 	display: flex;
@@ -161,6 +150,10 @@ nav .profile-popup a{
 nav .profile-popup .popup-content .profile-info .username a:hover{
 	text-decoration: underline;	
 }
+nav .profile-popup .popup-content .profile-info ion-icon{
+	font-size: .9em;
+	cursor: pointer;
+}
 nav .profile-popup .popup-content > a{
 	font-size: 1em;
 	display: flex;
@@ -169,7 +162,17 @@ nav .profile-popup .popup-content > a{
 	color: var(--primary-3);
 	padding: .3em .2em;
 	border-radius: .2em;
+/*	position: relative;*/
 }
+/*nav .profile-popup .popup-content > a::before{
+	position: absolute;
+	content: '';
+	top: 0;
+	right: .2em;
+	width: 96%;
+	height: .1px;
+	background: var(--primary-3);
+}*/
 nav .profile-popup .popup-content > a:last-child{
 	text-align: center;
 	justify-content: center;
