@@ -9,7 +9,7 @@
 </head>
 <body>
 	<section>
-		<form class="signin">
+		<form class="signin form">
 			<label>signin</label>
 			<input type="email" placeholder="Email" class="email">
 			<div>
@@ -17,11 +17,11 @@
 				<ion-icon class="password-show-icon" name="eye-off-outline"></ion-icon>
 				<ion-icon class="password-hide-icon" name="eye-outline"></ion-icon>
 		    </div>
-			<a href="#">forgot password?</a>
+			<a href="#" class="forgot-password-link">forgot password?</a>
 			<button>Login</button>
 			<span>Already have an account?<a href="#" class="link">signup</a></span>
 		</form>
-		<form class="signup display-none">
+		<form class="signup display-none form">
 			<label>signup</label>
 			<input type="email" placeholder="Email" class="email">
 			<div>
@@ -37,10 +37,10 @@
 			<button>Signin</button>
 			<span>Don't have an account?<a href="#" class="link">signup</a></span>
 		</form>
-		<!-- <form class="forgot-password">
+		<form class="forgot-password display-none">
 			<input type="email" name="forgot" placeholder="Enter email to refresh password">
 			<button>Send new password</button>
-		</form> -->
+		</form>
 	</section>
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
