@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*, ::before, ::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root{
+	--primary-1: #276348;
+	--primary-2: #1f4e43;
+	--primary-3: #1c4036;
+	--primary-1-light: #276348f0;
+	--primary-2-light: #1f4e43fa;
+	--primary-3-light: #1c4036f5;
+	--primary-4: #346851;
+	--remote-tag: #9d448b;
+	--remote-tag-bg: #ff79e42e;
+	--freelance-tag: #51d0c4;
+	--freelance-tag-bg: #73e3d91f;
+	--full-time-tag: #d0b651;
+	--full-time-tag-bg: #f9df7d36;
+	--contract-tag: #5153d0;
+	--contract-tag-bg: #8e90ff2e;
+}
+body{
+	font-size: 19px;
+	font-family: 'Sofia Sans', sans-serif;
+}
+nav{
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 3.5em;
+	background: var(--primary-1);
+	padding: 0 1em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 100000;
+}
+nav > div{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+nav .logo a{
+	text-decoration: none;
+	color: white;
+}
+nav .logo a span{
+	font-family: 'Pacifico', cursive;
+	font-size: 2em;
+	white-space: nowrap;
+}
+nav .category-icon{
+	justify-content: center;
+}
+nav .category-icon ion-icon{
+	font-size: 1.5em;
+	color: white;
+	padding: .3em;
+	border-radius: 50%;
+	transition: all .1s ease-in;
+}
+nav .category-icon ion-icon:hover{
+	background: white;
+	color: var(--primary-1);
+}
+nav .links{
+	justify-content: flex-end;
+} 
+nav .links a{
+	color: white;
+	text-decoration: none;
+}
+nav .links #signin-signup{
+	white-space: nowrap;
+	border: 2px solid white;
+	padding: .2em .4em;
+	border-radius: 1.8em;
+	transition: all .1s ease-in;
+}
+nav .links #signin-signup:hover{
+	background: white;
+	color: var(--primary-1);
+}
+nav .profile-popup{
+	position: relative;
+	display: none;
+}
+nav .profile-popup .popup-toggle{
+	position: absolute;
+	width: 2.2em;
+	height: 2.2em;
+	border-radius: 50%;
+	overflow: hidden;
+	right: 0;
+	cursor: pointer;
+}
+nav .profile-popup .popup-toggle img{
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	object-fit: cover;
+}
+nav .profile-popup .popup-content{
+	position: absolute;
+	top: .2em;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	background: white;
+	padding: .4em;
+	border-radius: .3em;
+	display: none;
+}
+nav .profile-popup .popup-content .profile-info{
+	display: flex;
+	gap: .4em;
+	margin-bottom: .4em;
+}
+nav .profile-popup .popup-content .profile-info .pfp{
+	width: 2em;
+	height: 2em;
+	background: red;
+	border-radius: .2em;
+	overflow: hidden;
+}
+nav .profile-popup .popup-content .profile-info .pfp img{
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	object-fit: cover;
+}
+nav .profile-popup .popup-content .profile-info .username{
+	display: flex;
+	align-items: center;
+	padding: 0 .8em 0 0;
+}
+nav .profile-popup .popup-content .profile-info .username a{
+	font-size: 1.3em;
+}
+nav .profile-popup a{
+	text-decoration: none;
+	color: var(--primary-1);
+}
+nav .profile-popup .popup-content .profile-info .username a:hover{
+	text-decoration: underline;	
+}
+nav .profile-popup .popup-content .profile-info ion-icon{
+	font-size: .9em;
+	cursor: pointer;
+}
+nav .profile-popup .popup-content > a{
+	font-size: 1em;
+	display: flex;
+	align-items: center;
+	gap: .3em;
+	color: var(--primary-3);
+	padding: .3em .2em;
+	border-radius: .2em;
+/*	position: relative;*/
+}
+/*nav .profile-popup .popup-content > a::before{
+	position: absolute;
+	content: '';
+	top: 0;
+	right: .2em;
+	width: 96%;
+	height: .1px;
+	background: var(--primary-3);
+}*/
+nav .profile-popup .popup-content > a:last-child{
+	text-align: center;
+	justify-content: center;
+}
+nav .profile-popup .popup-content > a:hover{
+	background: var(--primary-3);
+	color: white;
+}
+section{
+	width: 100%;
+}
+section .search-box{
+	background: var(--primary-2);
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	padding: 1em;
+}
+section .search-box h2{
+	color: white;
+	text-align: center;
+	font-size: 2em;
+}
+section .search-box form{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+section .search-box form input{
+	width: 25em;
+	height: 2.5em;
+	border: none;
+	border-radius: 1.25em;
+	padding: 0 .7em;
+}
+section .available{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+section .available .job-cards{
+	width: 75%;
+	background: var(--primary-3);
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+section .available .job-cards .job-card{
+	background: white;
+	border-radius: .2em;
+	padding: .5em;
+}
+section .available .job-cards .job-card .info{
+	display: flex;
+	gap: 1em;
+}
+section .available .job-cards .job-card .info .pfp{
+	max-height: 6em;
+	max-width: 6em;
+	overflow: hidden;
+	border-radius: .2em;
+}
+section .available .job-cards .job-card .info .pfp img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+section .available .job-cards .job-card .info .company-info{
+	display: flex;
+	flex-direction: column;
+	gap: .2em;
+}
+section .available .job-cards .job-card .info .company-info a{
+	color: var(--primary-1);
+	text-decoration: none;
+}
+section .available .job-cards .job-card .info .company-info a:hover{
+	text-decoration: underline;
+}
+section .available .job-cards .job-card .info .company-info .company-name{
+	font-size: 1.5em;
+	font-weight: 500;
+}
+section .available .job-cards .job-card .requirements ul,
+section .available .job-cards .job-card .roles ul{
+	margin-left: 2em;
+}
+section .available .job-cards .job-card .ccccc{
+	margin: .5em 0 0 1.5em;
+}
+section .available .job-cards .job-card .ccccc span{
+	color: orange;
+}
+section .available .categories{
+	background: var(--primary-1);
+	width: 25%;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	gap: .35em;
+}
+section .available .categories h2{
+	color: white;
+	margin-bottom: 1em;
+	text-align: center;
+}
+section .available .categories a{
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+section .available .categories a:hover{
+	text-decoration: underline;
+}
+footer{
+	bottom: 0;
+	width: 100%;
+	background: var(--primary-4);
+	padding: 1em;
+	color: white;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: .5em;
+}
+footer a{
+	color: white;
+	text-decoration: none;
+}
+footer p{
+	text-align: center;
+}

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?ffamily=Sofia+Sans:wght@300;400;500&display=swap');
+
+*, ::before, ::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root{
+	--primary-1: #276348;
+	--primary-2: #1f4e43;
+	--primary-3: #1c4036;
+	--primary-1-light: #276348f0;
+	--primary-2-light: #1f4e43fa;
+	--primary-3-light: #1c4036f5;
+	--primary-4: #346851;
+}
+
+body{
+	font-size: 19px;
+	font-family: 'Sofia Sans', sans-serif;
+	background: var(--primary-4);
+}
+section{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	gap: 2em;
+	align-items: center;
+	justify-content: center;
+}
+form{
+	display: flex;
+	gap: .5em;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: white;
+	padding: 1em;
+	border-radius: .25em;
+}
+form > div{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+form > div ion-icon{
+	position: absolute;
+	right: .5em;
+/*	opacity: 0;*/
+}
+form label,
+input::placeholder,
+form a,
+form button,
+form > div ion-icon{
+	color: var(--primary-1);
+}
+form input{
+	height: 3em;
+	width: 100%;
+	padding: .5em;
+	border: 1px solid var(--primary-1);
+	border-radius: .25em;
+}
+form input:focus{
+	border-bottom-width: 2px;
+	outline: none;
+}
+form button{
+	width: 100%;
+	background: var(--primary-3-light);
+	border: none;
+	outline: none;
+	border-radius: .25em;
+	color: white;
+	font-size: 1.2em;
+	padding: .2em 0;
+}
+form button:hover{
+	background: var(--primary-3);
+}
+.forgot-password button{
+	font-size: .9em;
+}
+form span{
+	font-size: .8em;
+}
+.display-none{
+	display: none;
+}
+ion-icon.opacity-null{
+	opacity: 0;
+}
