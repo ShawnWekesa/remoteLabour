@@ -1,0 +1,39 @@
+<%- include ("partials/header") -%> 
+<div class="ui main text container segment">
+    <div class="ui huge header">Post a job</div>
+    <form class="ui form" action="http://localhost:2000/api/employer/job" method="POST">
+        
+        <div class="field">
+            <label for="Title">Title</label>
+           <input type="text" name="title" placeholder="title">
+        </div>
+
+        <div class="field">
+            <label for="Amount">Amount</label>
+           <input type="text" name="amount" placeholder="amount">
+        </div>
+
+        <div class="field">
+            <label for="Job Type">Job Type</label>
+            <input type="text" name="jobType" placeholder="full-time/contract">
+        </div>
+
+        <div class="field">
+            <label for="Location">Location</label>
+           <input type="text" name="location" placeholder="location">
+        </div>
+        <div class="field">
+            <label for="Description">Description</label>
+           <input type="text" name="description" placeholder="job description">
+        </div>
+
+        <div class="field">
+            <label for="Email">Email</label>
+           <input type="email" name="email" placeholder="email address">
+        </div>
+
+        <input class="ui primary big button" type="submit">
+      
+    </form>
+</div>
+<%- include ("partials/footer") -%> 

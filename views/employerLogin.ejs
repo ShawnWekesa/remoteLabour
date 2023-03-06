@@ -1,0 +1,23 @@
+<%- include ("partials/header") -%> 
+
+<a href="http://localhost:2000/api/employer/signup">click to Register as an Employer</a>
+<div class="ui main text container segment">
+    <div class="ui huge header">Login as an employer</div>
+
+    <form class="ui form" action="login" method="POST">
+        
+        <div class="field">
+            <label for="Email">Email</label>
+           <input type="email" name="email" placeholder="email">
+        </div>
+
+        <div class="field">
+            <label for="Password">Password</label>
+            <input type="password" name="password" placeholder="password">
+        </div>
+
+        <input class="ui primary big button" type="submit">
+      
+    </form>
+</div>
+<%- include ("partials/footer") -%> 

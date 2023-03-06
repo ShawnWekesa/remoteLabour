@@ -1,0 +1,27 @@
+<%- include ("partials/header") -%>
+
+    <h1> Welcome back!!!!!!!</h1>
+    <p> List of  Jobs you accepted</p>
+ 
+                <% job.forEach((job)=>{ %>
+                                
+                                    <li>
+                                        <ul>
+                                            Title: <%= job.title %> <br>
+                                            Amount: <%= job.amount %> <br>
+                                            Description: <%= job.description %> <br>
+                                            Location: <%= job.location %> <br>
+                                            Posted: <%= job.created %> <br>
+                                            <a href="http://localhost:2000/api/candidate/jobs/<%= `${userId}` %>/<%= job._id %>/undoaccept" ">click to undo accept</a>
+                                        </ul>
+                                        
+                                            
+                                               
+                                    </li>
+                                   
+                                
+                              
+                           
+                    <% }) %>
+
+    <%- include ("partials/footer") -%>

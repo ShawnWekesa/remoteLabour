@@ -1,0 +1,25 @@
+<%- include ("partials/header") -%>
+
+    <h1> Welcome back!!!!!!!</h1>
+    <p> List of available Jobs you posted</p>
+ 
+                <% job.forEach((job)=>{ %>
+                                
+                                    <li>
+                                        <ul>
+                                            Title: <%= job.title %> <br>
+                                            Amount: <%= job.amount %> <br>
+                                            Description: <%= job.description %> <br>
+                                            Location: <%= job.location %> <br>
+                                            Posted: <%= job.created %> <br>
+                                        </ul>
+                                        
+                                            
+                                               
+                                    </li>
+                                
+                              
+                           
+                    <% }) %>
+
+    <%- include ("partials/footer") -%>
