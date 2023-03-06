@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>--</title>
+	<link rel="stylesheet"  href="css/login-form.css">
+	<script type="text/javascript" src="jS/login-form.js" defer></script>
+</head>
+<body>
+	<section>
+		<form class="signin form">
+			<label>signin</label>
+			<input type="email" placeholder="Email" class="email">
+			<div>
+				<input type="password" placeholder="Password" class="password-input-field">
+				<ion-icon class="password-show-icon" name="eye-off-outline"></ion-icon>
+				<ion-icon class="password-hide-icon" name="eye-outline"></ion-icon>
+		    </div>
+			<a href="#" class="forgot-password-link">forgot password?</a>
+			<button>Login</button>
+			<span>Already have an account?<a href="#" class="link">signup</a></span>
+		</form>
+		<form class="signup display-none form">
+			<label>signup</label>
+			<input type="email" placeholder="Email" class="email">
+			<div>
+				<input type="password" placeholder="Password" class="password-input-field">
+				<ion-icon class="password-show-icon" name="eye-off-outline"></ion-icon>
+				<ion-icon class="password-hide-icon" name="eye-outline"></ion-icon>
+		    </div>
+		    <div>
+				<input type="password" placeholder="Password" class="password-input-field">
+				<ion-icon class="password-show-icon" name="eye-off-outline"></ion-icon>
+				<ion-icon class="password-hide-icon" name="eye-outline"></ion-icon>
+		    </div>
+			<button>Signin</button>
+			<span>Don't have an account?<a href="#" class="link">signup</a></span>
+		</form>
+		<form class="forgot-password display-none">
+			<input type="email" name="forgot" placeholder="Enter email to refresh password">
+			<button>Send new password</button>
+		</form>
+	</section>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
