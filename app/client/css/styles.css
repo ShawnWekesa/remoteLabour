@@ -233,12 +233,16 @@ section{
 #home > div p{
 	font-size: 1.5em;
 	color: white;
-	margin: .8em 0;
+	margin-top: 4em;
 	z-index: 500;
 }
-#home > div .p-two{
-	font-size: 1em;
+#home > div p:nth-child(2),
+#home > div p:nth-child(3){
+	margin-top: 3em;
 }
+/*#home > div .p-two{
+	font-size: 1em;
+}*/
 #home .job .images,
 #home .labour .images{
 	position: relative;
@@ -410,7 +414,8 @@ section{
 #categories .job-categories .category-links .links{
 	display: flex;
 	flex-wrap: wrap;
-	gap: .5em;
+	gap: .3em;
+	padding: .1em;
 }
 #categories .job-categories .category-links .links span{
 	font-size: 1.3em;
@@ -466,13 +471,15 @@ section{
 	font-weight: 400;
 }
 #available-jobs .available-job-card{
-	display: grid;
-	grid-template-columns: 5em auto;
+	/*display: grid;
+	grid-template-columns: 5em auto;*/
+	display: flex;
+	flex-direction: row;
 	gap: .5em;
 	background: white;
-	padding: .3em;
+	padding: .2em;
 	border-radius: .2em;
-	overflow: hidden;
+/*	overflow: hidden;*/
 	position: relative;
 }
 #available-jobs .available-job-card::after{
@@ -486,7 +493,10 @@ section{
 }
 #available-jobs .available-job-card .pfp{
 	width: 100%;
-	max-height: 5em;
+	height: 5em;
+	width: 5em;
+	min-height: 5em;
+	min-width: 5em;
 	border-radius: .2em;
 	overflow: hidden;
 }
@@ -552,13 +562,13 @@ section{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-/*	width: 60%;*/
+	padding: 0 .2em;
 }
 #available-jobs .available-job-card .bbbbb > div{
 	display: flex;
 	gap: .5em;
 	font-size: .9em;
-	width: 100%;
+/*	width: 100%;*/
 }
 #available-jobs .available-job-card .bbbbb > div .pay{
 	color: green;
@@ -609,11 +619,14 @@ footer p{
   }
 }
 @media only screen and (max-width: 1200px ) and (min-width: 770px) {
+	#available-jobs .available-job-card{
+		overflow: hidden;
+	}
 	#available-jobs .available-job-card .job-description{
 		padding: .3em;
-		height: 3em;
+		height: 7em;
 		width: 50em;
-		word-wrap: break-word;
+/*		word-wrap: break-word;*/
 		white-space: nowrap;
 		text-overflow: ellipsis;
 		overflow: hidden;
@@ -621,6 +634,9 @@ footer p{
 	#available-jobs .available-job-card .job-description p{
 		text-overflow: ellipsis;
 		overflow: hidden;
+	}
+	#available-jobs .available-job-card .bbbbb{
+	 	justify-content: space-evenly
 	}
 }
 @media only screen and (max-width: 1075px){
@@ -658,14 +674,14 @@ footer p{
 	 	font-size: 2em;
 		margin-top: 1em;
 	}
-	#home > div p{
+	/*#home > div p{
 		font-size: 1.4em;
 		margin: .5em 0;
 		font-weight: 500;
 	}
 	#home > div .p-two{
 		font-size: 1em;
-	}
+	}*/
 }
 @media only screen and (max-width: 830px){
 	nav .links #signin-signup{
