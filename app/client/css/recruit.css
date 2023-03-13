@@ -204,13 +204,74 @@ section .available{
 	flex-direction: row;
 	width: 100%;
 }
-section .available .job-cards{
+section .available .profile-cards{
 	width: 75%;
 	background: var(--primary-3);
-	padding: 1em;
+	padding: .71em;
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
+}
+section .available .profile-cards .profile-card{
+	background: white;
+	padding: .51em;
+	border-radius: .25em;
+	display: flex;
+	flex-direction: column;
+	gap: 1em
+}
+section .available .profile-cards .profile-card .profile-info{
+	display: flex;
+	gap: 1em;
+}
+section .available .profile-cards .profile-card .profile-info .pfp{
+	width: 5em;
+	height: 5em;
+	overflow: hidden;
+	border-radius: .25em;
+}
+section .available .profile-cards .profile-card .profile-info .pfp img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+section .available .profile-cards .profile-card .profile-info .info{
+	display: flex;
+	flex-direction: column;
+	gap: .5em;
+}
+section .available .profile-cards .profile-card .profile-info .info a{
+	color: var(--primary-1);
+	text-decoration: none;
+	font-size: 1.5em;
+	font-weight: 500;
+}
+section .available .profile-cards .profile-card .profile-info .interactions{
+	left: 10em;
+}
+section .available .profile-cards .profile-card .profile-info .interactions ion-icon{
+	color: red;
+}
+section .available .profile-cards .profile-card .links{
+	display: flex;
+	gap: .5em;
+}
+section .available .profile-cards .profile-card li{
+	margin-left: 1em;
+}
+section .available .profile-cards .profile-card .connect{
+	text-decoration: none;
+	color: var(--primary-3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: .4em;
+	padding: .2em;
+	border-radius: .2em;
+}
+section .available .profile-cards .profile-card .connect:hover{
+	color: white;
+	background: var(--primary-3);
 }
 section .available .categories{
 	background: var(--primary-1);
