@@ -1,0 +1,20 @@
+export default {
+  type: "object",
+  properties: {
+    email: { type: "string", format: "email" },
+    password: { type: "string" },
+    name: { type: "string" },
+    gender: { type: "string" },
+    acceptedJobs: { type: "number" },
+    rejectedJobs: { type: "number" },
+    userId: { type: "string", format: "mongoObjectId" },
+    skills: { type: "string" },
+    rating: { type: "string" },
+    resume: { type: "string" },
+    profile: { type: "string" },
+    contactEmail: { type: "string" },
+    contactNumber: { type: "string" },
+  },
+  required: ["email", "password", "name", "gender"],
+  additionalProperties: false,
+};
