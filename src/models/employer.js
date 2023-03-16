@@ -5,6 +5,11 @@ import { handleDuplicateKeyError } from "./error.js";
 
 const schema = new mongoose.Schema(
   {
+    userId: {
+      type: mongoose.ObjectId,
+      required: true,
+      ref: "User",
+    },
     email: {
       type: String,
       required: true,
