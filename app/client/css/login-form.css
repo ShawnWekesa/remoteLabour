@@ -94,3 +94,13 @@ form span{
 ion-icon.opacity-null{
 	opacity: 0;
 }
+.verification label{
+	font-size: .6em;
+	margin: 0;
+	padding: 0;
+}
+.verification input{
+	height: .9em;
+	margin: 0;
+	padding: 0;
+}
