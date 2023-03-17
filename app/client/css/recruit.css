@@ -247,7 +247,8 @@ section .available .profile-cards .profile-card .profile-info .info a{
 	font-weight: 500;
 }
 section .available .profile-cards .profile-card .profile-info .interactions{
-	left: 10em;
+	display: flex;
+	justify-content: flex-end;
 }
 section .available .profile-cards .profile-card .profile-info .interactions ion-icon{
 	color: red;

@@ -475,21 +475,12 @@ section{
 	grid-template-columns: 5em auto;*/
 	display: flex;
 	flex-direction: row;
-	gap: .5em;
+	gap: .3em;
 	background: white;
-	padding: .2em;
+	padding: .3em;
 	border-radius: .2em;
 /*	overflow: hidden;*/
 	position: relative;
-}
-#available-jobs .available-job-card::after{
-	position: absolute;
-	content: '';
-	top: 0;
-	right: 0;
-	width: .4em;
-	height: 100%;
-	background: white;
 }
 #available-jobs .available-job-card .pfp{
 	width: 100%;
@@ -507,7 +498,7 @@ section{
 }
 #available-jobs .available-job-card .info{
 	display: flex;
-	gap: .1em;
+/*	gap: .3em;*/
 	flex-direction: column;
 	justify-content: space-evenly;
 }
@@ -617,6 +608,15 @@ footer p{
   #categories .category-links .links a:nth-child(11){
   	display: none;
   }
+  #available-jobs .available-job-card::after{
+		position: absolute;
+		content: '';
+		top: 0;
+		right: 0;
+		width: .4em;
+		height: 100%;
+		background: white;
+	}
 }
 @media only screen and (max-width: 1200px ) and (min-width: 770px) {
 	#available-jobs .available-job-card{
