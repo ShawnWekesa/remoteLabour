@@ -596,6 +596,9 @@ footer a{
 	color: white;
 	text-decoration: none;
 }
+footer > a{
+	font-size: .4em;
+}
 footer p{
 	text-align: center;
 }

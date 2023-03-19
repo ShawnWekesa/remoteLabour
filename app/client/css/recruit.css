@@ -218,7 +218,33 @@ section .available .profile-cards .profile-card{
 	border-radius: .25em;
 	display: flex;
 	flex-direction: column;
-	gap: 1em
+	gap: 1em;
+	position: relative;
+}
+section .available .profile-cards .profile-card .interactions{
+	position: absolute;
+	top: .5em;
+	right: .5em;
+	background: #e0dcdc8c;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: .3em;
+	border-radius: .2em;
+}
+section .available .profile-cards .profile-card .interactions > div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+section .available .profile-cards .profile-card .interactions > div span{
+	font-size: .6em;
+}
+section .available .profile-cards .profile-card .interactions .likes ion-icon{
+	color: red;
+}
+section .available .profile-cards .profile-card .interactions .profile-views ion-icon{
+	color: blue;
 }
 section .available .profile-cards .profile-card .profile-info{
 	display: flex;
@@ -238,7 +264,7 @@ section .available .profile-cards .profile-card .profile-info .pfp img{
 section .available .profile-cards .profile-card .profile-info .info{
 	display: flex;
 	flex-direction: column;
-	gap: .5em;
+	gap: .2em;
 }
 section .available .profile-cards .profile-card .profile-info .info a{
 	color: var(--primary-1);
@@ -246,12 +272,13 @@ section .available .profile-cards .profile-card .profile-info .info a{
 	font-size: 1.5em;
 	font-weight: 500;
 }
-section .available .profile-cards .profile-card .profile-info .interactions{
-	display: flex;
-	justify-content: flex-end;
+section .available .profile-cards .profile-card .profile-info .info a:hover{
+	text-decoration: underline;
 }
-section .available .profile-cards .profile-card .profile-info .interactions ion-icon{
-	color: red;
+section .available .profile-cards .profile-card .profile-info .info .user-location ion-icon{
+	color: var(--primary-3);
+	font-size: .8em;
+	text-align: center;
 }
 section .available .profile-cards .profile-card .links{
 	display: flex;
