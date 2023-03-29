@@ -69,9 +69,27 @@ form{
 	padding: 1em;
 	border-radius: .25em;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: .5em;
 }
 form > div{
 	width: 100%;
+	border-radius: .1em;
+}
+form .pfp{
+	width: 5em;
+	height: 5em;
+	border-radius: 50%;
+	overflow: hidden;
+}
+form .pfp img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+form > div span{
+	color: var(--primary-3);
 }
 section .profile-info{
 	background: white;
