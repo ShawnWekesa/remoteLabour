@@ -71,11 +71,7 @@ form{
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	gap: .5em;
-}
-form > div{
-	width: 100%;
-	border-radius: .1em;
+	gap: .3em;
 }
 form .pfp{
 	width: 5em;
@@ -88,8 +84,33 @@ form .pfp img{
 	height: 100%;
 	object-fit: contain;
 }
-form > div span{
+form > div:not(:first-child){
+	width: 100%;
+	border-radius: .1em;
+	padding: .5em;
+	display: flex;
+	gap: 1em;
 	color: var(--primary-3);
+}
+form > div:not(:first-child):hover{
+	background: #1b492d69;
+}
+form > div:not(:first-child) div{
+	padding: .09em;
+	border-radius: .1em;
+	text-align: center;
+	background: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+form > div:not(:first-child) div{
+	background: white;
+}
+form > div:not(:first-child) div ion-icon{
+	color: var(--primary-4);
+	font-size: .8em;
 }
 section .profile-info{
 	background: white;
