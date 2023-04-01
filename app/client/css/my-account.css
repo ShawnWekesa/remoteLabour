@@ -73,6 +73,9 @@ form{
 	flex-direction: column;
 	gap: .3em;
 }
+form .image-container{
+	position: relative;
+}
 form .pfp{
 	width: 5em;
 	height: 5em;
@@ -84,11 +87,29 @@ form .pfp img{
 	height: 100%;
 	object-fit: contain;
 }
+form .image-container .save-edit{
+	position: absolute;
+	top: 3.8em;
+	left: 4em;
+	padding: .09em;
+	border-radius: .1em;
+	text-align: center;
+	background: var(--primary-4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+form .image-container .save-edit ion-icon{
+	color: white;
+	font-size: .7em;
+}
 form > div:not(:first-child){
 	width: 100%;
 	border-radius: .1em;
 	padding: .5em;
 	display: flex;
+	align-items: center;
 	gap: 1em;
 	color: var(--primary-3);
 }
@@ -96,7 +117,7 @@ form > div:not(:first-child):hover{
 	background: #1b492d69;
 }
 form > div:not(:first-child) div{
-	padding: .09em;
+	padding: .08em;
 	border-radius: .1em;
 	text-align: center;
 	background: white;
@@ -108,9 +129,31 @@ form > div:not(:first-child) div{
 form > div:not(:first-child) div{
 	background: white;
 }
+form > div:not(:first-child) span{
+	font-size: .9em;
+}
 form > div:not(:first-child) div ion-icon{
 	color: var(--primary-4);
-	font-size: .8em;
+}
+form > div:not(:first-child) div input{
+	padding: .5em 1em;
+	border-radius: .1em;
+	border: none;
+	outline: transparent;
+}
+form .qualifications{
+	flex-direction: column;
+}
+form > div:not(:first-child) .input-field-qualifications{
+	width: 100%;
+}
+form > div:not(:first-child) div textarea{
+	resize: none;
+	width: 100%;
+	padding: .6em;
+}
+ion-icon[name="checkmark-outline"]{
+	display: none;
 }
 section .profile-info{
 	background: white;

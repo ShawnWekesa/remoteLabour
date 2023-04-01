@@ -17,45 +17,82 @@
 	</nav>
 	<section class="user-info-form">
 		<form>
-			<div class="pfp">
-				<img src="imgs/pfp4.jpeg">
+			<div class="image-container">
+				<div class="pfp">
+					<img src="imgs/pfp4.jpeg">
+				</div>
+				<div class="save-edit">
+					<ion-icon name="pencil-sharp"></ion-icon>
+					<ion-icon name="checkmark-outline"></ion-icon>
+				</div>
 			</div>
 			<div class="username">
 				<label>User Name</label>
 				<span class="username-span">John Doe</span>
+				<div class="input-field">
+					<input type="text" name="user-name" placeholder="Enter new username">
+				</div>
 				<div>
 					<ion-icon name="pencil-sharp"></ion-icon>
+					<ion-icon name="checkmark-outline"></ion-icon>
 				</div>
 			</div>
 			<div class="email">
 				<label>Email</label>
 				<span class="email-span">johndoe@gmail.com</span>
+				<div class="input-field">
+					<input type="email" name="email" placeholder="Change email">
+				</div>
 				<div>
 					<ion-icon name="pencil-sharp"></ion-icon>
+					<ion-icon name="checkmark-outline"></ion-icon>
 				</div>
 			</div>
 			<div class="profession">
 				<label>Profession</label>
 				<span class="profession-span"></span>
+				<div class="input-field">
+					<input type="text" name="profession" placeholder="Enter your current profession">
+				</div>
 				<div>
 					<ion-icon name="pencil-sharp"></ion-icon>
+					<ion-icon name="checkmark-outline"></ion-icon>
 				</div>
 			</div>	
 			<div class="qualifications">
 				<label>Qualifications</label>
 				<p class="qualifications-p"></p>
+				<div class="input-field-qualifications">
+					<textarea rows="8"></textarea>
+				</div>
 				<div>
 					<ion-icon name="pencil-sharp"></ion-icon>
+					<ion-icon name="checkmark-outline"></ion-icon>
 				</div>
-			</div>	
-			<div class="links">
-				<label>Websites or other links</label>
-				<a href="#">twitter</a>
-			</div>	
+			</div>
+			<div class="rate">
+				<label>Rate in KSh</label>
+				<p class="rate-p"></p>
+				<div class="input-field">
+					<input type="number" name="user-name" placeholder="Enter amount">
+				</div>
+				<div>
+					<ion-icon name="pencil-sharp"></ion-icon>
+					<ion-icon name="checkmark-outline"></ion-icon>
+				</div>
+			</div>		
 			<div class="contact">
 				<label>Contacts</label>
-				<span>Phone</span>
-				<span>Email</span>
+				<div class="phone-number">
+					<label>Phone Number</label>
+					<span class="phone-number-span"></span>
+					<div class="input-field">
+						<input type="number" name="user-name" placeholder="Enter phone number">
+					</div>
+					<div>
+						<ion-icon name="pencil-sharp"></ion-icon>
+					</div>
+				</div>	
 			</div>
 			<button>Save</button>
 		</form>
