@@ -139,7 +139,7 @@ form > div:not(:first-child) div input{
 	padding: .5em 1em;
 	border-radius: .1em;
 	border: none;
-	outline: transparent;
+	outline: 1px solid var(--primary-4);
 }
 form .qualifications{
 	flex-direction: column;
@@ -152,8 +152,23 @@ form > div:not(:first-child) div textarea{
 	width: 100%;
 	padding: .6em;
 }
+form > div:not(:first-child) .phone-number:hover{
+	background: #1b492d69;
+} 
 ion-icon[name="checkmark-outline"]{
 	display: none;
+}
+form button{
+	border-radius: .25em;
+	border: none;
+	outline: none;
+	color: var(--primary-4);
+	padding: .5em;
+	font-size: 1.2em;
+}
+form button:hover{
+	background: var(--primary-4);
+	color: white;
 }
 section .profile-info{
 	background: white;
