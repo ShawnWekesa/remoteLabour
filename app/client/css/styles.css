@@ -91,6 +91,7 @@ nav .links .search ion-icon{
 	border-radius: 50%;
 	padding: .3em;
 	transition: all .1s ease-in;
+	margin-right: .2em;
 }
 nav .links .search ion-icon:hover{
 	color: var(--primary-1);
@@ -422,6 +423,7 @@ section{
 	border-radius: .2em;
 	padding: .4em;
 	text-align: center;
+	margin-right: .3em;
 }
 #categories .labour-categories{
 	background: var(--primary-2-light);
@@ -662,36 +664,29 @@ footer p{
 	 	font-size: 2em;
 		margin-top: 1em;
 	}
-	/*#home > div p{
-		font-size: 1.4em;
-		margin: .5em 0;
-		font-weight: 500;
-	}
-	#home > div .p-two{
-		font-size: 1em;
-	}*/
 }
 @media only screen and (max-width: 830px){
-	nav .links #signin-signup{
-		display: none;
-	}
 	#home > div h1{
 	 	font-size: 2em;
 		margin-top: 0em;
 	}
 }
 @media only screen and (max-width: 769px){
-	#available-jobs .available-job-card .pfp{
-		min-height: 5em;
+	section{
+		height: 665px;
 	}
-	#available-jobs .available-job-card .job-description{
-		height: auto;
-		width: 100%;
-		white-space: normal;
-		text-overflow: ellipsis;
-		overflow: hidden;
+	#home > div h1{
+		font-size: 2em;
+		margin-top: .31em;
 	}
-	#available-jobs .available-job-card .job-description.display-none{
-		display: none;
+	#home > div a{
+		opacity: 1;
+	}
+	#home .categories .images img,
+	#home .labour .images img{
+		opacity: .4;
+	}
+	#categories .job-categories .title span{
+		margin: 0 0 0 30%;
 	}
 }
