@@ -333,13 +333,21 @@ section{
 	justify-content: space-between;
 	border: 2px solid white;
 	transition: all .1s ease-in;
+	transform: scale(1);
 }
 #home > div:hover a{
 	opacity: 1;
 }
-#home .job a:hover{
+#home > div a:hover{
+	transform: scale(1.06);
+}
+#home .labour a:hover{
 	background: white;
 	color: var(--primary-1);
+}
+#home .categories a:hover{
+	background: white;
+	color: var(--primary-3);
 }
 #home .labour{
 	background: var(--primary-2-light);
@@ -348,20 +356,12 @@ section{
 #home .labour:hover{
 	background: var(--primary-2);
 }
-#home .labour a:hover{
-	background: white;
-	color: var(--primary-2);
-}
 #home .categories{
 	background: var(--primary-3-light);
 	z-index: 1;
 }
 #home .categories:hover{
 	background: var(--primary-3);
-}
-#home .categories a:hover{
-	background: white;
-	color: var(--primary-3);
 }
 #home .images{
 	width: 100%;
@@ -544,6 +544,10 @@ section{
 #popular-profiles > div .profiles .profile-card .user-location span ion-icon{
 	font-size: .8em;
 	text-align: center;
+}
+#popular-profiles > div .profiles .profile-card .current-occupation{
+	white-space: nowrap;
+	overflow: hidden;
 }
 #popular-profiles > div .profiles .profile-card .current-occupation span{
 	color: var(--primary-3);
