@@ -202,6 +202,7 @@ nav .profile-popup .popup-content > a:hover{
 section{
 	height: 100vh;
 	width: 100%;
+	scroll-behavior: smooth;
 }
 #home{
 	height: 92vh;
@@ -461,7 +462,7 @@ section{
 	text-align: center;
 	color: white;
 	font-weight: 400;
-	font-size: 1.5em;
+	font-size: 1.8em;
 }
 #popular-profiles > div .profiles{
 	margin-top: 1em;
@@ -470,6 +471,8 @@ section{
 	align-items: center;
 	justify-content: center;
 	gap: 1em;
+	width: 100%;
+	height: 100%;
 }
 #popular-profiles > div .profiles .profile-card{
 	background: white;
@@ -571,27 +574,55 @@ footer{
 	bottom: 0;
 	width: 100%;
 	background: var(--primary-2);
-	padding: 1em;
+	padding: 1.5em;
 	color: white;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	flex-direction: column;
-	gap: .5em;
+	font-family: monospace;
 }
-footer > div:first-child{
+footer > div{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+footer > div .aaa{
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-start;
+}
+footer > div .bbb{
+	display: flex;
+	flex-direction: row;
+	margin: 0;
 }
 footer a{
 	color: white;
 	text-decoration: none;
-	text-align: center;
+	border-radius: .1em;
+}
+footer > div .bbb a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: .3em;
+}
+footer a:hover{
+	background: var(--bg);
+}
+footer a ion-icon{
+	font-size: 1.2em;
 }
 footer > a{
 	font-size: .4em;
 }
 footer p{
 	text-align: center;
+}
+footer p i{
+	font-size: 1.2em;
 }
 
 
