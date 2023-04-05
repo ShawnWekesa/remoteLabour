@@ -29,6 +29,7 @@
 body{
 	font-size: 17px;
 	font-family: 'Sofia Sans', sans-serif;
+	background: var(--primary-1);
 }
 nav{
 	position: sticky;
@@ -450,7 +451,7 @@ section{
 }
 #popular-profiles{
 	height: 100%;
-	min-height: 100vh;
+/*	min-height: 100vh;*/
 }
 #popular-profiles > div{
 	background: var(--primary-1);
