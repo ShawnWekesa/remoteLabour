@@ -27,7 +27,7 @@
 	--contract-tag-bg: #8e90ff2e;
 }
 body{
-	font-size: 19px;
+	font-size: 17px;
 	font-family: 'Sofia Sans', sans-serif;
 }
 nav{
@@ -475,7 +475,7 @@ section{
 	background: white;
 	border-radius: .25em;
 	padding: .5em;
-	width: 14em;
+	width: 16em;
 	display: flex;
 	flex-direction: column;
 	gap: .5em;
