@@ -91,6 +91,7 @@ nav .links .search ion-icon{
 	border-radius: 50%;
 	padding: .3em;
 	transition: all .1s ease-in;
+	margin-right: .2em;
 }
 nav .links .search ion-icon:hover{
 	color: var(--primary-1);
@@ -248,6 +249,34 @@ section{
 	transition: all .1s ease-in;
 	opacity: 0;
 }
+#home .labour .images img:nth-child(1){
+	display: block;
+	width: 8em;
+	z-index: -2;
+	opacity: .4;
+	top: -12em;
+	right: .1em;
+}
+#home .labour .images img:nth-child(2){
+	width: 11em;
+	top: -20em;
+	left: -1.5em;
+}
+#home .labour .images img:nth-child(3){
+	width: 8em;
+	top: -1em;
+	right: 9em;
+}
+#home .labour .images img:nth-child(4){
+	width: 11em;
+	top: -2.5em;
+	left: -1em;
+}
+#home .labour .images img:nth-child(5){
+	width: 6em;
+	top: 5em;
+	right: -.5em;
+}
 #home .categories .images img:nth-child(1){
 	top: -14em;
 }
@@ -260,13 +289,13 @@ section{
 	width: 8em;
 	z-index: -2;
 	opacity: .4;
-	top: -11em;
+	top: -16em;
 	right: 2em;
 }
 #home .categories .images img:nth-child(4){
-	width: 8em;
-	top: 5em;
-	right: .5em;
+	width: 13em;
+	top: -9em;
+	right: 9em;
 }
 #home .categories .images img:nth-child(5){
 	width: 4em;
@@ -277,6 +306,17 @@ section{
 	width: 4em;
 	top: -.1em;
 	left: .5em;
+}
+#home .categories:hover .images img:nth-child(1),
+#home .categories:hover .images img:nth-child(2),
+#home .categories:hover .images img:nth-child(4),
+#home .categories:hover .images img:nth-child(5),
+#home .categories:hover .images img:nth-child(6),
+#home .labour:hover .images img:nth-child(2),
+#home .labour:hover .images img:nth-child(3),
+#home .labour:hover .images img:nth-child(4),
+#home .labour:hover .images img:nth-child(5){
+	opacity: .45;
 }
 #home > div a{
 	opacity: 0;
@@ -293,24 +333,21 @@ section{
 	justify-content: space-between;
 	border: 2px solid white;
 	transition: all .1s ease-in;
+	transform: scale(1);
 }
 #home > div:hover a{
 	opacity: 1;
 }
-#home .job a:hover{
+#home > div a:hover{
+	transform: scale(1.06);
+}
+#home .labour a:hover{
 	background: white;
 	color: var(--primary-1);
 }
-#home .categories:hover .images img:nth-child(1),
-#home .categories:hover .images img:nth-child(2),
-#home .categories:hover .images img:nth-child(4),
-#home .categories:hover .images img:nth-child(5),
-#home .categories:hover .images img:nth-child(6),
-#home .labour:hover .images img:nth-child(2),
-#home .labour:hover .images img:nth-child(3),
-#home .labour:hover .images img:nth-child(4),
-#home .labour:hover .images img:nth-child(5){
-	opacity: .4;
+#home .categories a:hover{
+	background: white;
+	color: var(--primary-3);
 }
 #home .labour{
 	background: var(--primary-2-light);
@@ -319,48 +356,12 @@ section{
 #home .labour:hover{
 	background: var(--primary-2);
 }
-#home .labour a:hover{
-	background: white;
-	color: var(--primary-2);
-}
-#home .labour .images img:nth-child(1){
-	display: block;
-	width: 8em;
-	z-index: -2;
-	opacity: .4;
-	top: -12em;
-	right: .1em;
-}
-#home .labour .images img:nth-child(2){
-	width: 8em;
-	top: -23em;
-	right: 15.5em;
-}
-#home .labour .images img:nth-child(3){
-	width: 8em;
-	top: -1em;
-	right: 3em;
-}
-#home .labour .images img:nth-child(4){
-	width: 11em;
-	top: 1em;
-	right: 12em;
-}
-#home .labour .images img:nth-child(5){
-	width: 6em;
-	top: 5em;
-	right: -.5em;
-}
 #home .categories{
 	background: var(--primary-3-light);
 	z-index: 1;
 }
 #home .categories:hover{
 	background: var(--primary-3);
-}
-#home .categories a:hover{
-	background: white;
-	color: var(--primary-3);
 }
 #home .images{
 	width: 100%;
@@ -422,6 +423,7 @@ section{
 	border-radius: .2em;
 	padding: .4em;
 	text-align: center;
+	margin-right: .3em;
 }
 #categories .labour-categories{
 	background: var(--primary-2-light);
@@ -543,6 +545,10 @@ section{
 	font-size: .8em;
 	text-align: center;
 }
+#popular-profiles > div .profiles .profile-card .current-occupation{
+	white-space: nowrap;
+	overflow: hidden;
+}
 #popular-profiles > div .profiles .profile-card .current-occupation span{
 	color: var(--primary-3);
 }
@@ -572,9 +578,14 @@ footer{
 	flex-direction: column;
 	gap: .5em;
 }
+footer > div:first-child{
+	display: flex;
+	flex-direction: column;
+}
 footer a{
 	color: white;
 	text-decoration: none;
+	text-align: center;
 }
 footer > a{
 	font-size: .4em;
@@ -657,36 +668,29 @@ footer p{
 	 	font-size: 2em;
 		margin-top: 1em;
 	}
-	/*#home > div p{
-		font-size: 1.4em;
-		margin: .5em 0;
-		font-weight: 500;
-	}
-	#home > div .p-two{
-		font-size: 1em;
-	}*/
 }
 @media only screen and (max-width: 830px){
-	nav .links #signin-signup{
-		display: none;
-	}
 	#home > div h1{
 	 	font-size: 2em;
 		margin-top: 0em;
 	}
 }
 @media only screen and (max-width: 769px){
-	#available-jobs .available-job-card .pfp{
-		min-height: 5em;
+	section{
+		height: 665px;
 	}
-	#available-jobs .available-job-card .job-description{
-		height: auto;
-		width: 100%;
-		white-space: normal;
-		text-overflow: ellipsis;
-		overflow: hidden;
+	#home > div h1{
+		font-size: 2em;
+		margin-top: .31em;
 	}
-	#available-jobs .available-job-card .job-description.display-none{
-		display: none;
+	#home > div a{
+		opacity: 1;
+	}
+	#home .categories .images img,
+	#home .labour .images img{
+		opacity: .4;
+	}
+	#categories .job-categories .title span{
+		margin: 0 0 0 30%;
 	}
 }
