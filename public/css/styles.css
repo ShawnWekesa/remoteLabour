@@ -451,7 +451,7 @@ section{
 }
 #popular-profiles{
 	height: 100%;
-/*	min-height: 100vh;*/
+	font-size: 20px;
 }
 #popular-profiles > div{
 	background: var(--primary-1);
