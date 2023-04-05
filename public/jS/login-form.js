@@ -1,12 +1,12 @@
 console.log('hi')
 const passwordInputFields = document.querySelectorAll('.password-input-field');
+  emailInputFields = document.querySelectorAll('.email')
 	forms = document.querySelectorAll(".form");
 	links = document.querySelectorAll(".link");
   forgotPasswordLink = document.querySelector(".forgot-password-link");
   forgotPasswordForm = document.querySelector(".forgot-password");
   buttons = document.querySelectorAll(".form button");
 
-console.log(buttons, emailInputFields)
 passwordInputFields.forEach((passwordInput) => {
   const eyeOffIcon = passwordInput.parentElement.querySelector('ion-icon[name="eye-off-outline"]');
   const eyeIcon = passwordInput.parentElement.querySelector('ion-icon[name="eye-outline"]');

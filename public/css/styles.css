@@ -594,6 +594,15 @@ footer > div .aaa{
 	flex-direction: column;
 	justify-content: flex-start;
 }
+footer .logo a{
+	text-decoration: none;
+	color: white;
+}
+footer .logo a span{
+	font-family: 'Pacifico', cursive;
+	font-size: 1.5em;
+	white-space: nowrap;
+}
 footer > div .bbb{
 	display: flex;
 	flex-direction: row;
