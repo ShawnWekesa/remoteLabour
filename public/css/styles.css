@@ -27,7 +27,7 @@
 	--contract-tag-bg: #8e90ff2e;
 }
 body{
-	font-size: 20px;
+	font-size: 17px;
 	font-family: 'Sofia Sans', sans-serif;
 	background: var(--primary-1);
 }
