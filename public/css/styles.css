@@ -557,6 +557,7 @@ section{
 	color: var(--primary-3);
 }
 #popular-profiles > div .profiles .profile-card > a{
+	font-size: 1em;
 	text-decoration: none;
 	color: var(--primary-3);
 	background: #8181814a;
