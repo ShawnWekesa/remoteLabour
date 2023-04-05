@@ -449,7 +449,7 @@ section{
 	text-decoration: underline;
 }
 #popular-profiles{
-	height: auto;
+	height: 100%;
 	min-height: 100vh;
 }
 #popular-profiles > div{
