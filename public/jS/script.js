@@ -5,6 +5,7 @@ const searchBox = document.querySelector("#search");
       form = document.querySelector("form");
       nav = document.querySelector("nav");
       divs = document.querySelectorAll("section > div");
+      image = document.querySelector("section > div .images img");
 
 searchIcon.addEventListener("click", () =>{
 	searchBox.classList.toggle("hide");
@@ -16,3 +17,7 @@ divs.forEach(div => {
     nav.style.backgroundColor = backgroundColor;
   });
 });
+
+var lazyLoadInstance = new LazyLoad({
+    elements_selector: "img"
+  });
