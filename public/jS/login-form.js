@@ -48,66 +48,67 @@ forgotPasswordLink.addEventListener('click', () => {
   })
 });
 
+const signUpForm = document.querySelector(".signup");
+const signUpEmailInput = document.querySelector('.signup input[type="email"]');
+const signUpPasswordInputs = document.querySelectorAll('.signup input[type="password"]');
+const signUpButton = document.getElementById('sign-up-button');
 
-// const signUpEmailInput = document.querySelector('.sign-up-form input[type="email"]');
-// const signUpPasswordInputs = document.querySelectorAll('.sign-up-form input[type="password"]');
-// const signUpButton = document.getElementById('sign-up-button');
+function checkEmailInput(emailInput) {
+  const email = emailInput.value;
+  const emailRegex = /\S+@\S+\.\S+/;
 
+  if (!emailRegex.test(email)) {
+    alert('Please enter a valid email address.');
+    return false;
+  }
 
-// const signInEmailInput = document.querySelector('.sign-in-form input[type="email"]');
-// const signInPasswordInput = document.querySelector('.sign-in-form input[type="password"]');
-// const signInButton = document.getElementById('sign-in-button');
-
-
-// function checkEmailInput(emailInput) {
-//   const email = emailInput.value;
-//   const emailRegex = /\S+@\S+\.\S+/;
-
-//   if (!emailRegex.test(email)) {
-//     alert('Please enter a valid email address.');
-//     return false;
-//   }
-
-//   return true;
-// }
+  return true;
+}
 
 
-// function checkPasswordInputs(passwordInputs) {
-//   const password1 = passwordInputs[0].value;
-//   const password2 = passwordInputs[1].value;
-//   const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+function checkPasswordInputs(passwordInputs) {
+  const password1 = passwordInputs[0].value;
+  const password2 = passwordInputs[1].value;
+  const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
 
-//   if (password1 !== password2) {
-//     alert('Passwords do not match.');
-//     return false;
-//   }
+  if (password1 !== password2) {
+    alert('Passwords do not match.');
+    return false;
+  }
 
-//   if (!passwordRegex.test(password1) || !passwordRegex.test(password2)) {
-//     alert('Password must have at least one capital letter, one number, and be more than eight characters long.');
-//     return false;
-//   }
+  if (!passwordRegex.test(password1) || !passwordRegex.test(password2)) {
+    alert('Password must have at least one capital letter, one number, and be more than eight characters long.');
+    return false;
+  }
 
-//   return true;
-// }
-
-
-// signUpButton.addEventListener('click', function(event) {
-
-//   if (!checkEmailInput(signUpEmailInput) || !checkPasswordInputs(signUpPasswordInputs)) {
-//     event.preventDefault();
-//     return false;
-//   }
-// });
+  return true;
+}
 
 
-// signInButton.addEventListener('click', function(event) {
+signUpButton.addEventListener('click', function(event) {
 
-//   const signInPassword = signInPasswordInput.value;
-//   const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+  if (checkEmailInput(signUpEmailInput) && checkPasswordInputs(signUpPasswordInputs)) {
+    signUpForm.submit();
+  }
+  else{
+    event.preventDefault();
+  }
+});
 
-//   if (!passwordRegex.test(signInPassword)) {
-//     alert('Password must have at least one capital letter, one number, and be more than eight characters long.');
-//     event.preventDefault();
-//     return false;
-//   }
-// });
+const signInForm = document.querySelector(".signin");
+const signInEmailInput = document.querySelector('.signin input[type="email"]');
+const signInPasswordInput = document.querySelector('.signin input[type="password"]');
+const signInButton = document.getElementById('sign-in-button');
+
+signInButton.addEventListener('click', function(event) {
+
+  const signInPassword = signInPasswordInput.value;
+  const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+
+  if (passwordRegex.test(signInPassword)) {
+    signInForm.submit();
+  } else {
+    alert('Password must have at least one capital letter, one number, and be more than eight characters long.');
+    event.preventDefault();
+  }
+});
