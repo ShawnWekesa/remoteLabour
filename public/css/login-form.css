@@ -105,6 +105,7 @@ form button{
 	color: white;
 	font-size: 1.2em;
 	padding: .2em 0;
+	cursor: pointer;
 }
 form button:hover{
 	background: var(--primary-3);

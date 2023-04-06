@@ -562,13 +562,17 @@ section{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: .4em;
+	gap: .3em;
 	padding: .2em;
 	border-radius: .2em;
+	transform: scale(1.0);
+	transition: all .1s ease-in;
 }
 #popular-profiles > div .profiles .profile-card > a:hover{
 	color: white;
 	background: var(--primary-3);
+	transform: scale(1.05);
+	gap: .45em;
 }
 footer{
 	bottom: 0;
