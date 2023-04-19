@@ -42,7 +42,8 @@ nav{
 	align-items: center;
 	justify-content: space-between;
 	z-index: 100000;
-	border-bottom: 1px solid #c2f2e563;
+	box-shadow: .1em .01em .3em .001em rgba(0, 0, 0, .5);
+/*	border-bottom: 1px solid #c2f2e563;*/
 }
 nav > div{
 	width: 100%;
@@ -190,11 +191,11 @@ nav .profile-popup .popup-content > a:hover{
 	color: white;
 }
 section{
-	height: 100vh;
+	height: 665px;
 	width: 100%;
 }
 #home{
-	height: 92vh;
+/*	height: 92vh;*/
 	display: flex;
 	flex-direction: row;
 	overflow: hidden;
@@ -352,7 +353,7 @@ section{
 }
 #home > div:hover a{
 	opacity: 1;
-	box-shadow: 0 .001em 1em .001em rgba(0, 0, 0, .5);
+	box-shadow: .1em .01em 1em .001em rgba(0, 0, 0, .5);
 	border: 1px solid var(--primary-3);
 }
 #home > div a:hover{

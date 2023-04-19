@@ -28,7 +28,8 @@ divs.forEach(div => {
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 0) {
-    nav.style.backgroundColor = 'white'; 
+    nav.style.backgroundColor = 'white';
+    nav.style.pointerEvents = 'none'; 
   } else {
     nav.style.backgroundColor = ''; 
   }
