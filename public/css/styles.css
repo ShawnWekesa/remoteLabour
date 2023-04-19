@@ -30,6 +30,7 @@
 body{
 	font-size: 18px;
 	font-family: 'Sofia Sans', sans-serif;
+	user-select: none;
 }
 nav{
 	position: sticky;
@@ -211,7 +212,7 @@ section{
 }
 #home > div h1{
 	font-size: 3em;
-	margin-top: .61em;
+	margin-top: 1.5em;
 	z-index: 500;
 }
 #home > div p{
@@ -283,8 +284,9 @@ section{
 }
 #home .labour .images img:nth-child(2){
 	width: 6em;
-	top: -17.2em;
-	left: -1.5em;
+	top: -19.4em;
+	left: -1.2em;
+	opacity: .4;
 }
 #home .labour .images img:nth-child(3){
 	width: 8em;
@@ -301,8 +303,13 @@ section{
 	top: 5em;
 	right: -.5em;
 }
+#home .labour .images img:nth-child(6){
+	width: 7em;
+	top: -18em;
+	right: 14em;
+}
 #home .categories .images img:nth-child(1){
-	top: -14em;
+	top: -20em;
 }
 #home .categories .images img:nth-child(2){
 	top: 1em;
@@ -313,8 +320,8 @@ section{
 	width: 8em;
 	z-index: -2;
 	opacity: .4;
-	top: -16em;
-	right: 2em;
+	top: -17em;
+	right: -1em;
 }
 #home .categories .images img:nth-child(4){
 	width: 13em;
@@ -327,9 +334,10 @@ section{
 	right: 2em;
 }
 #home .categories .images img:nth-child(6){
-	width: 4em;
-	top: -.1em;
-	left: .5em;
+	width: 6em;
+	top: -22em;
+	right: 14em;
+	opacity: .4;
 }
 #home .categories:hover .images img,
 #home .labour:hover .images img{
@@ -652,7 +660,46 @@ footer p i{
 	font-size: 1.2em;
 }
 
-
+@media only screen and (max-width: 1310px) {
+	#home .labour .images img:nth-child(1){
+		top: -13em;
+	}
+	#home .labour .images img:nth-child(2){
+		top: -20.4em;
+	}
+	#home .labour .images img:nth-child(3){
+		top: -1em;
+	}
+	#home .labour .images img:nth-child(4){
+		top: -2.5em;
+	}
+	#home .labour .images img:nth-child(5){
+		top: 5em;
+	}
+	#home .labour .images img:nth-child(6){
+		top: -18em;
+	}
+}
+@media only screen and (max-width: 1278px) {
+	#home .categories .images img:nth-child(1){
+		top: -24em;
+	}
+	#home .categories .images img:nth-child(2){
+		top: -3em;
+	}
+	#home .categories .images img:nth-child(3){
+		top: -21em;;
+	}
+	#home .categories .images img:nth-child(4){
+		top: -13em;
+	}
+	#home .categories .images img:nth-child(5){
+		top: -4em;
+	}
+	#home .categories .images img:nth-child(6){
+		top: -26em;
+	}
+}
 @media only screen and (max-width: 1220px) {
   #categories .category-links .links a:nth-child(8),
   #categories .category-links .links a:nth-child(9),
