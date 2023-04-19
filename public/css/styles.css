@@ -54,7 +54,7 @@ nav > div{
 }
 nav .logo a{
 	text-decoration: none;
-	color: var(--primary-3);
+	color: var(--primary-2);
 }
 nav .logo a span{
 	font-family: 'Pacifico', cursive;
@@ -68,7 +68,7 @@ nav .links a{
 	padding: 1em;
 	color: white;
 	text-decoration: none;
-	background: var(--primary-3);
+	background: var(--primary-2);
 }
 nav .links .search{
 /*	margin: .4em 2em 0 0;*/
@@ -78,7 +78,7 @@ nav .links .search{
 nav .links .search ion-icon{
 	color: white;
 	font-size: .9em;
-	background: var(--primary-3);
+	background: var(--primary-2);
 	border-radius: 50%;
 	padding: .7em;
 	transition: all .1s ease-in;
@@ -87,12 +87,12 @@ nav .links .search ion-icon{
 nav .links .search ion-icon:hover{
 	color: var(--primary-3);
 	background: white;
-	outline: 2px solid var(--primary-1);
+	outline: 2px solid var(--primary-2);
 }
 nav .links .search input{
 	height: 2.4em;
 	border: none;
-	outline: 2px solid var(--primary-1);
+	outline: 2px solid var(--primary-2);
 	border-radius: 1em;
 	padding: .5em;
 }
@@ -108,7 +108,7 @@ nav .links #signin-signup{
 nav .links #signin-signup:hover{
 	background: white;
 	color: var(--primary-1);
-	outline: 2px solid var(--primary-1);
+	outline: 2px solid var(--primary-2);
 }
 nav .popup{
 	position: relative;
