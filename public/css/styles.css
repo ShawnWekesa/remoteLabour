@@ -378,9 +378,9 @@ section{
 	padding: 1em;
 }
 #categories .job-categories{
-/*	background: white;*/
+	background: var(--white);
 	display: grid;
-	grid-template-columns: 30% auto;
+	grid-template-columns: 27% auto;
 	border-top: 1px solid #c2f2e563;
 	border-bottom: 1px solid #c2f2e563;
 }
@@ -392,7 +392,7 @@ section{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	padding: 1em;
+	padding: 1em .7em 1em 1em;
 	border-right: 1px solid #c2f2e563;
 }
 #categories .job-categories .title p,
@@ -408,12 +408,13 @@ section{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
+	padding: 0 0 0 1.2em;
 }
 #categories .job-categories .category-links .links{
 	display: flex;
 	flex-wrap: wrap;
 	gap: .3em;
-	padding: .1em;
+/*	padding: .1em;*/
 }
 #categories .job-categories .category-links .links span{
 	font-size: 1.3em;
@@ -431,13 +432,13 @@ section{
 	margin-right: .3em;
 }
 #categories .labour-categories{
-	background: white;
+	background: var(--white);
 	display: flex;
 	justify-content: space-evenly;
 	flex-direction: column;
 	padding: 1em;
 	font-size: 2.5em;
-	color: white;
+/*	color: white;*/
 	text-align: center;
 	color: white;
 }
@@ -456,14 +457,14 @@ section{
 	height: 100%;
 }
 #popular-profiles > div{
-	background: var(--primary-1);
+	background: var(--white);
 	width: 100%;
 	height: 100%;
 	padding: 1em;
 }
 #popular-profiles > div h2{
 	text-align: center;
-	color: white;
+	color: var(--primary-3);
 	font-weight: 400;
 	font-size: 1.8em;
 }
@@ -485,6 +486,12 @@ section{
 	display: flex;
 	flex-direction: column;
 	gap: .5em;
+	box-shadow: .08em .3em .4em .001em rgba(0, 0, 0, .2);
+	transform: scale(1.0);
+}
+#popular-profiles > div .profiles .profile-card:hover{
+	box-shadow: .08em .3em .4em .001em rgba(0, 0, 0, .3);
+	transform: scale(1.01);
 }
 #popular-profiles > div .profiles .profile-card .interactions{
 	background: #e0dcdc8c;
