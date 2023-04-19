@@ -19,6 +19,21 @@ divs.forEach(div => {
   });
 });
 
+divs.forEach(div => {
+  div.addEventListener('mouseleave', () => {
+    nav.style.backgroundColor = ''; 
+    nav.style.boxShadow = ''; 
+  });  
+});
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+    nav.style.backgroundColor = 'white'; 
+  } else {
+    nav.style.backgroundColor = ''; 
+  }
+});
+
 var lazyLoadInstance = new LazyLoad({
     elements_selector: "img"
   });

@@ -42,7 +42,7 @@ nav{
 	align-items: center;
 	justify-content: space-between;
 	z-index: 100000;
-	box-shadow: 0 .001em 1em .001em rgba(0, 0, 0, .5);
+	border-bottom: 1px solid #c2f2e563;
 }
 nav > div{
 	width: 100%;
@@ -223,13 +223,14 @@ section{
 #home .labour{
 	background: white;
 	z-index: 1;
+	border-right: 1px solid #c2f2e563;
 }
 #home .labour:hover{
 	background: #c2f2e563;
 }
 #home .labour h1{
 	color: var(--primary-2);
-}
+	}
 #home .labour:hover h1{
 /*	color: #afc6c1;*/
 }
