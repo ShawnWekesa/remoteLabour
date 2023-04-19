@@ -21,8 +21,8 @@ divs.forEach(div => {
 
 divs.forEach(div => {
   div.addEventListener('mouseleave', () => {
-    nav.style.backgroundColor = '';
-    nav.style.boxShadow = 'none'; 
+    nav.style.backgroundColor = 'white';
+    nav.style.boxShadow = '.1em .01em .3em .001em rgba(0, 0, 0, .5'; 
   });  
 });
 
