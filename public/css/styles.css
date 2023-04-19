@@ -25,6 +25,7 @@
 	--full-time-tag-bg: #f9df7d36;
 	--contract-tag: #5153d0;
 	--contract-tag-bg: #8e90ff2e;
+	--white: #f5f5f58c;
 }
 body{
 	font-size: 18px;
@@ -36,7 +37,7 @@ nav{
 	left: 0;
 	width: 100%;
 	height: 3.5em;
-	background: white;
+	background: var(--white);
 	padding: 0 1em;
 	display: flex;
 	align-items: center;
@@ -70,9 +71,9 @@ nav .links a{
 	background: var(--primary-3);
 }
 nav .links .search{
-	margin: .4em 2em 0 0;
+/*	margin: .4em 2em 0 0;*/
 	display: flex;
-	gap: .2em;
+	gap: .5em;
 }
 nav .links .search ion-icon{
 	color: white;
@@ -222,7 +223,7 @@ section{
 	font-size: 1em;
 }
 #home .labour{
-	background: white;
+	background: var(--white);
 	z-index: 1;
 	border-right: 1px solid #c2f2e563;
 }
@@ -239,7 +240,7 @@ section{
 	color: var(--primary-2);
 }
 #home .categories{
-	background: white;
+	background: var(--white);
 	z-index: 1;
 }
 #home .categories:hover{
@@ -252,10 +253,10 @@ section{
 	color: var(--primary-3);
 }
 }
-#home > div:hover h1,
+/*#home > div:hover h1,
 #home > div:hover p{
 	color: white;
-}
+}*/
 #home .images{
 	width: 100%;
 }
@@ -377,25 +378,28 @@ section{
 	padding: 1em;
 }
 #categories .job-categories{
-	background: var(--primary-3-light);
+/*	background: white;*/
 	display: grid;
 	grid-template-columns: 30% auto;
+	border-top: 1px solid #c2f2e563;
+	border-bottom: 1px solid #c2f2e563;
 }
 #categories .job-categories:hover{
-	background: var(--primary-3);
+	background: #ccffe969;
 }
 #categories .job-categories .title{
-	color: white;
+/*	color: var(--primary-3);*/
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	padding: 1em;
+	border-right: 1px solid #c2f2e563;
 }
 #categories .job-categories .title p,
 #categories .job-categories .title a,
 #categories .job-categories .title span{
 	font-size: 2em;
-	color: white;
+	color: var(--primary-3);
 }
 #categories .job-categories .title span{
 	margin: 0 0 0 40%;
@@ -413,12 +417,12 @@ section{
 }
 #categories .job-categories .category-links .links span{
 	font-size: 1.3em;
-	color: white;
+	color: var(--primary-3);
 	margin-right: .6em;
 }
 #categories .job-categories .category-links .links a{
-	color: var(--primary-3);
-	background: white;
+	color: white;
+	background: var(--primary-3);
 	text-decoration: none;
 	font-size: .8em;
 	border-radius: .2em;
@@ -427,7 +431,7 @@ section{
 	margin-right: .3em;
 }
 #categories .labour-categories{
-	background: var(--primary-2-light);
+	background: white;
 	display: flex;
 	justify-content: space-evenly;
 	flex-direction: column;
@@ -438,11 +442,11 @@ section{
 	color: white;
 }
 #categories .labour-categories:hover{
-	background: var(--primary-2);
+	background: #c2f2e563;
 }
 #categories .labour-categories a{
 	font-size: 1.3em;
-	color: white;
+	color: var(--primary-3);
 	text-decoration: none;
 }
 #categories .labour-categories a:hover{
@@ -600,11 +604,13 @@ footer > div .aaa{
 footer .logo a{
 	text-decoration: none;
 	color: white;
+	text-align: center;
 }
 footer .logo a span{
 	font-family: 'Pacifico', cursive;
 	font-size: 1.5em;
 	white-space: nowrap;
+	text-align: center;
 }
 footer > div .bbb{
 	display: flex;
