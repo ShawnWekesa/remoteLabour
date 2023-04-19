@@ -15,6 +15,7 @@ divs.forEach(div => {
   div.addEventListener('mouseenter', () => {
     const backgroundColor = window.getComputedStyle(div).backgroundColor;
     nav.style.backgroundColor = backgroundColor;
+    nav.style.boxShadow = 'none';
   });
 });
 
