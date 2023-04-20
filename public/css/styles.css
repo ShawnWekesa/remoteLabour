@@ -253,11 +253,6 @@ section{
 #home .categories p{
 	color: var(--primary-3);
 }
-}
-/*#home > div:hover h1,
-#home > div:hover p{
-	color: white;
-}*/
 #home .images{
 	width: 100%;
 }
@@ -309,10 +304,10 @@ section{
 	right: 14em;
 }
 #home .categories .images img:nth-child(1){
-	top: -20em;
+	top: -19em;
 }
 #home .categories .images img:nth-child(2){
-	top: 1em;
+	top: 2em;
 	left: 2.5em;
 }
 #home .categories .images img:nth-child(3){
@@ -320,22 +315,22 @@ section{
 	width: 8em;
 	z-index: -2;
 	opacity: .4;
-	top: -17em;
+	top: -16em;
 	right: -1em;
 }
 #home .categories .images img:nth-child(4){
 	width: 13em;
-	top: -9em;
+	top: -8em;
 	right: 9em;
 }
 #home .categories .images img:nth-child(5){
 	width: 4em;
-	top: 0em;
+	top: 1em;
 	right: 2em;
 }
 #home .categories .images img:nth-child(6){
 	width: 6em;
-	top: -22em;
+	top: -19em;
 	right: 14em;
 	opacity: .4;
 }
@@ -482,7 +477,7 @@ section{
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-evenly;
 	gap: 1em;
 	width: 100%;
 	height: 100%;
@@ -491,7 +486,7 @@ section{
 	background: white;
 	border-radius: .25em;
 	padding: .5em;
-	width: 273px;
+	width: 300px;
 	display: flex;
 	flex-direction: column;
 	gap: .5em;
@@ -680,26 +675,6 @@ footer p i{
 		top: -18em;
 	}
 }
-@media only screen and (max-width: 1278px) {
-	#home .categories .images img:nth-child(1){
-		top: -24em;
-	}
-	#home .categories .images img:nth-child(2){
-		top: -3em;
-	}
-	#home .categories .images img:nth-child(3){
-		top: -21em;;
-	}
-	#home .categories .images img:nth-child(4){
-		top: -13em;
-	}
-	#home .categories .images img:nth-child(5){
-		top: -4em;
-	}
-	#home .categories .images img:nth-child(6){
-		top: -26em;
-	}
-}
 @media only screen and (max-width: 1220px) {
   #categories .category-links .links a:nth-child(8),
   #categories .category-links .links a:nth-child(9),
@@ -738,6 +713,26 @@ footer p i{
 	 	justify-content: space-evenly
 	}
 }
+@media only screen and (max-width: 1211px) {
+	#home .categories .images img:nth-child(1){
+		top: -19em;
+	}
+	#home .categories .images img:nth-child(2){
+		top: 0em;
+	}
+	#home .categories .images img:nth-child(3){
+		top: -17em;;
+	}
+	#home .categories .images img:nth-child(4){
+		top: -10em;
+	}
+	#home .categories .images img:nth-child(5){
+		top: -1em;
+	}
+	#home .categories .images img:nth-child(6){
+		top: -22em;
+	}
+}
 @media only screen and (max-width: 1075px){
 	#categories .job-categories .title p,
 	#categories .job-categories .title a,
@@ -758,11 +753,41 @@ footer p i{
 }
 @media only screen and (max-width: 1053px){
 	#home > div h1{
-	 	font-size: 2.5em;
-		margin-top: 1em;
+	 	font-size: 2.9em;
+	}
+	#home .labour .images img:nth-child(2){
+		left: -1.2em;
+	}
+	#home .labour .images img:nth-child(3){
+		right: 7em;
+	}
+	#home .labour .images img:nth-child(4){
+		left: -1em;
+	}
+	#home .labour .images img:nth-child(5){
+		right: -.5em;
+	}
+	#home .labour .images img:nth-child(6){
+		right: 10em;
+	}
+	#home .categories .images img:nth-child(2){
+		left: 1em;
+	}
+	#home .categories .images img:nth-child(3){
+		right: -1em;
+	}
+	#home .categories .images img:nth-child(4){
+		right: 6em;
+	}
+	#home .categories .images img:nth-child(5){
+		top: 0em;
+		right: 1em;
+	}
+	#home .categories .images img:nth-child(6){
+		right: 10em;
 	}
 	#categories .labour-categories{
-		font-size: 2.2em;
+		font-size: 2.8em;
 	}
 }
 @media only screen and (max-width: 914px){
@@ -770,8 +795,48 @@ footer p i{
 		font-size: 1.5em;
 	}
 	#home > div h1{
-	 	font-size: 2em;
-		margin-top: 1em;
+	 	font-size: 2.8em;
+	}
+	#home .labour .images img:nth-child(3){
+		right: 5em;
+		width: 6em;
+	}
+}
+@media only screen and (max-width: 862px){
+	#home .labour .images img:nth-child(2){
+		left: -1.2em;
+	}
+	#home .labour .images img:nth-child(3){
+		right: 7em;
+	}
+	#home .labour .images img:nth-child(4){
+		left: -1em;
+		width: 8em;
+	}
+	#home .labour .images img:nth-child(5){
+		right: -.5em;
+	}
+	#home .labour .images img:nth-child(6){
+		right: 10em;
+	}
+	#home .categories .images img:nth-child(2){
+		left: 1em;
+	}
+	#home .categories .images img:nth-child(3){
+		right: -1em;
+	}
+	#home .categories .images img:nth-child(4){
+		right: 6em;
+	}
+	#home .categories .images img:nth-child(5){
+		top: 0em;
+		right: 1em;
+	}
+	#home .categories .images img:nth-child(6){
+		right: 8em;
+	}
+	#categories .labour-categories{
+		font-size: 2.8em;
 	}
 }
 @media only screen and (max-width: 830px){
