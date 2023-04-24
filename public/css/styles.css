@@ -867,6 +867,22 @@ footer p i{
 		margin: 0 0 0 30%;
 	}
 }
+@media only screen and (max-width: 654px){
+	#popular-profiles > div .profiles .profile-card{
+		width: 280px;
+	}
+}
+@media only screen and (max-width: 597px){
+	#categories .labour-categories a{
+		font-size: 1em;
+	}
+	#popular-profiles > div .profiles{
+		padding: 1.5em;
+	}
+	#popular-profiles > div .profiles .profile-card{
+		width: 100%;
+	}
+}
 @media only screen and (max-width: 480px){
 	nav .links #signin-signup{
 		display: none;
