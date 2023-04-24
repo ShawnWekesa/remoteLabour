@@ -878,7 +878,11 @@ footer p i{
 		width: 100%;
 	}
 	#home > div h1{
+		font-size: 1.9em;
 		margin-top: 0;
+	}
+	#home > div p{
+		margin-top: .5em;
 	}
 	#home > div a{
 		bottom: 2em;
