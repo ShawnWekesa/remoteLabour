@@ -853,6 +853,9 @@ footer p i{
 		font-size: 2em;
 		margin-top: .31em;
 	}
+	#home > div p{
+		margin-top: 1em;
+	}
 	#home > div a{
 		opacity: 1;
 	}
@@ -862,5 +865,62 @@ footer p i{
 	}
 	#categories .job-categories .title span{
 		margin: 0 0 0 30%;
+	}
+}
+@media only screen and (max-width: 480px){
+	nav .links #signin-signup{
+		display: none;
+	}
+	#home{
+		flex-direction: column;
+	}
+	#home > div{
+		width: 100%;
+	}
+	#home > div h1{
+		margin-top: 0;
+	}
+	#home > div a{
+		bottom: 2em;
+	}
+	#categories .job-categories{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1em;
+	}
+	#categories .job-categories .title{
+		align-items: center;
+	}
+	#categories .job-categories .title p,
+	#categories .job-categories .title a{
+		text-align: center;
+	}
+	#categories .job-categories .title span{
+		margin-left: -.5em;
+	}
+	#categories .job-categories .category-links .links a,
+	#categories .job-categories .category-links .links span{
+		display: none;
+	}
+	#categories .labour-categories a{
+		font-size: 1em;
+	}
+	#popular-profiles > div h2{
+		font-size: 2em;
+		margin-top: 1em;
+	}
+	#popular-profiles > div .profiles{
+		padding: 1.5em;
+	}
+	#popular-profiles > div .profiles .profile-card{
+		width: 100%;
+	}
+	footer > div{
+		display: flex;
+		flex-direction: column;
+	}
+	footer > div .aaa{
+		display: none;
 	}
 }
