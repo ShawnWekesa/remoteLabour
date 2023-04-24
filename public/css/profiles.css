@@ -348,11 +348,13 @@ footer > div .aaa{
 footer .logo a{
 	text-decoration: none;
 	color: white;
+	text-align: center;
 }
 footer .logo a span{
 	font-family: 'Pacifico', cursive;
 	font-size: 1.5em;
 	white-space: nowrap;
+	text-align: center;
 }
 footer > div .bbb{
 	display: flex;
@@ -385,4 +387,3 @@ footer p{
 footer p i{
 	font-size: 1.2em;
 }
-
