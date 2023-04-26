@@ -6,6 +6,9 @@ const searchBox = document.querySelector("#search");
       nav = document.querySelector("nav");
       divs = document.querySelectorAll("section > div");
       image = document.querySelector("section > div .images img");
+      open = document.querySelector("ion-icon[name=menu-outline]");
+      close = document.querySelector("ion-icon[name=close-outline]");
+      
 
 searchIcon.addEventListener("click", () =>{
 	searchBox.classList.toggle("hide");
@@ -22,14 +25,14 @@ divs.forEach(div => {
 divs.forEach(div => {
   div.addEventListener('mouseleave', () => {
     nav.style.backgroundColor = 'white';
-    nav.style.boxShadow = '.1em .01em .3em .001em rgba(0, 0, 0, .5'; 
+    nav.style.boxShadow = '.1em .01em .3em .001em rgba(0, 0, 0, .5)'; 
   });  
 });
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 0) {
     nav.style.backgroundColor = 'white';
-    nav.style.boxShadow = '.1em .01em .3em .001em rgba(0, 0, 0, .5'; 
+    nav.style.boxShadow = '.1em .01em .3em .001em rgba(0, 0, 0, .5)'; 
   } else {
     nav.style.backgroundColor = ''; 
   }

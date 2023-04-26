@@ -44,6 +44,7 @@ nav{
 	align-items: center;
 	justify-content: space-between;
 	z-index: 100000;
+/*	gap: 1em;*/
 	box-shadow: .1em .01em .3em .001em rgba(0, 0, 0, .5);
 /*	border-bottom: 1px solid #c2f2e563;*/
 }
@@ -52,6 +53,7 @@ nav > div{
 	height: 100%;
 	display: flex;
 	align-items: center;
+/*	justify-content: space-between;*/
 }
 nav .logo a{
 	text-decoration: none;
@@ -81,9 +83,10 @@ nav .links .search ion-icon{
 	font-size: .9em;
 	background: var(--primary-2);
 	border-radius: 50%;
-	padding: .7em;
+	padding: .5em;
 	transition: all .1s ease-in;
 	margin-right: .2em;
+	cursor: pointer;
 }
 nav .links .search ion-icon:hover{
 	color: var(--primary-3);
@@ -119,28 +122,52 @@ nav .popup .popup-content{
 	position: absolute;
 	top: .2em;
 	right: 0;
-	background: white;
+	background: var(--primary-2);
 	padding: .5em;
 	border-radius: .2em;
 }
 nav .popup .popup-content a{
-	color: var(--primary-4);
+	color: white;
 	text-decoration: none;
 	white-space: nowrap;
 }
 nav .profile-popup{
 	position: relative;
 	display: none;
+	margin: 1em 0 0 0;
+	width: auto;
+}
+nav .profile-popup .popup-toggle{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+nav .profile-popup .popup-toggle ion-icon{
+	color: white;
+/*	background: var(--white);*/
+	background: var(--primary-2);
+	padding: .13em;
+	font-size: 1.35em;
+	border-radius: .2em;
+	cursor: pointer;
+	margin: .3em 0 0 0;
+	z-index: 1000;
+}
+nav .profile-popup .popup-toggle ion-icon:hover{
+	background: var(--white);
+	color: var(--primary-2);
 }
 nav .profile-popup .popup-content{
 	position: absolute;
-	top: .2em;
-	right: .2em;
+	top: .27em;
+	right: -.1em;
 	display: flex;
 	flex-direction: column;
-	background: white;
-	padding: .4em;
-	border-radius: .3em;
+	background: var(--primary-2);
+	padding: .2em;
+	border-radius: .33em;
+	width: 11em;
+	display: none;
 }
 nav .profile-popup .popup-content .profile-info{
 	display: flex;
@@ -170,7 +197,7 @@ nav .profile-popup .popup-content .profile-info .username a{
 }
 nav .profile-popup a{
 	text-decoration: none;
-	color: var(--primary-1);
+	color: white;
 }
 nav .profile-popup .popup-content .profile-info .username a:hover{
 	text-decoration: underline;	
@@ -180,7 +207,7 @@ nav .profile-popup .popup-content > a{
 	display: flex;
 	align-items: center;
 	gap: .3em;
-	color: var(--primary-3);
+	color: white;
 	padding: .3em .2em;
 	border-radius: .2em;
 }
@@ -942,5 +969,15 @@ footer p i{
 	}
 	footer > div .aaa{
 		display: none;
+	}
+}
+
+@media only screen and (max-width: 646px){
+	nav .links #signin-signup{
+		display: none;
+	}
+	nav .profile-popup{
+		display: block;
+		margin: 1em 0 0 0;
 	}
 }
