@@ -925,10 +925,15 @@ footer p i{
 		margin-top: 0;
 	}
 	#home > div p{
-		margin-top: .5em;
+		margin-top: 1em;
+	}
+	#home > div .p-two{
+		display: none;
 	}
 	#home > div a{
 		bottom: 2em;
+		right: 50%;
+		transform: translateX(50%);
 	}
 	#categories .job-categories{
 		display: flex;
