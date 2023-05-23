@@ -8,10 +8,12 @@ const searchBox = document.querySelector("#search");
       image = document.querySelector("section > div .images img");
       open = document.querySelector("ion-icon[name=menu-outline]");
       close = document.querySelector("ion-icon[name=close-outline]");
+      logo = document.querySelector(".logo")
       
 
 searchIcon.addEventListener("click", () =>{
 	searchBox.classList.toggle("hide");
+  logo.classList.toggle("hide");
 })
 
 divs.forEach(div => {

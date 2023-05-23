@@ -55,6 +55,9 @@ nav > div{
 	align-items: center;
 /*	justify-content: space-between;*/
 }
+nav .logo.hide{
+	display: none;
+}
 nav .logo a{
 	text-decoration: none;
 	color: var(--primary-2);
@@ -99,6 +102,7 @@ nav .links .search input{
 	outline: 2px solid var(--primary-2);
 	border-radius: 1em;
 	padding: .5em;
+	margin-right: .55em;
 }
 nav .links .search input.hide{
 	display: none;
