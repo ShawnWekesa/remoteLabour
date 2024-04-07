@@ -10,6 +10,7 @@
 	box-sizing: border-box;
 }
 :root{
+	--white: #f7fffd;
 	--primary-1: #276348;
 	--primary-2: #1f4e43;
 	--primary-3: #1c4036;
@@ -36,12 +37,13 @@ nav{
 	left: 0;
 	width: 100%;
 	height: 3.5em;
-	background: var(--primary-1);
+	background: var(--white);
 	padding: 0 1em;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	z-index: 100000;
+	border-bottom: .61px solid lightgrey;
 }
 nav > div{
 	width: 100%;
@@ -51,71 +53,60 @@ nav > div{
 }
 nav .logo a{
 	text-decoration: none;
-	color: white;
+	color: var(--primary-3);
 }
 nav .logo a span{
 	font-family: 'Pacifico', cursive;
 	font-size: 2em;
 	white-space: nowrap;
 }
-nav .category-icon{
-	justify-content: center;
-}
-nav .category-icon ion-icon{
-	font-size: 1.5em;
-	color: white;
-	padding: .3em;
-	border-radius: 50%;
-	transition: all .1s ease-in;
-}
-nav .category-icon ion-icon:hover{
-	background: white;
-	color: var(--primary-1);
-}
 nav .links{
 	justify-content: flex-end;
 } 
 nav .links a{
-	color: white;
+	color: var(--primary-3);
 	text-decoration: none;
 }
 nav .links .search{
-	margin: .4em 2em 0 0;
+	margin: .4em 1.2em 0 0;
 	display: flex;
 	gap: .2em;
 }
-nav .links .search ion-icon{
-	color: white;
-	font-size: .9em;
-	border: 2px solid white;
+nav .links .search i{
+	color: var(--primary-3);
+	border: 2px solid var(--primary-3);
 	border-radius: 50%;
 	padding: .3em;
 	transition: all .1s ease-in;
+	cursor: pointer;
 }
-nav .links .search ion-icon:hover{
-	color: var(--primary-1);
-	background: white;
+nav .links .search i:hover{
+	color: white;
+	background: var(--primary-3);
+	scale: 1.1;
 }
 nav .links .search input{
 	height: 2.4em;
 	border: none;
-	outline: none;
+	outline: 2px solid var(--primary-3);
 	border-radius: 1em;
 	padding: .5em;
+	margin-left: .5em;
 }
 nav .links .search input.hide{
 	display: none;
 }
 nav .links #signin-signup{
 	white-space: nowrap;
-	border: 2px solid white;
+	border: 2px solid var(--primary-3);
 	padding: .2em .4em;
 	border-radius: 1.8em;
 	transition: all .1s ease-in;
 }
 nav .links #signin-signup:hover{
-	background: white;
-	color: var(--primary-1);
+	background: var(--primary-3);
+	color: white;
+	scale: 1.1;
 }
 nav .popup{
 	position: relative;
@@ -215,23 +206,18 @@ section{
 	position: relative;
 	overflow: hidden;
 	transition: width .2s ease-in-out;
+	color: var(--primary-3);
 }
 #home > div h1{
 	font-size: 3em;
-	color: white;
 	margin-top: .61em;
 	z-index: 500;
 }
 #home > div p{
 	font-size: 1.5em;
-	color: white;
 	margin-top: 1em;
 	z-index: 500;
 }
-/*#home > div p:nth-child(2),
-#home > div p:nth-child(3){
-	margin-top: 3em;
-}*/
 #home > div .p-two{
 	font-size: 1em;
 }
@@ -278,28 +264,29 @@ section{
 	top: -.1em;
 	left: .5em;
 }
-#home > div a{
+#home > .labour a,
+#home > .categories a{
 	opacity: 0;
 	position: absolute;
 	bottom: 4em;
 	right: 2em;
-	width: 5em;
 	border-radius: 1.3em;
 	padding: .5em;
 	text-decoration: none;
-	color: white;
+	color: var(--primary-3);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	border: 2px solid white;
+	border: 2px solid var(--primary-3);
 	transition: all .1s ease-in;
 }
 #home > div:hover a{
 	opacity: 1;
 }
-#home .job a:hover{
-	background: white;
-	color: var(--primary-1);
+#home > div a:hover{
+	background: var(--primary-3);
+	color: white;
+	scale: 1.1;
 }
 #home .categories:hover .images img:nth-child(1),
 #home .categories:hover .images img:nth-child(2),
@@ -313,15 +300,12 @@ section{
 	opacity: .4;
 }
 #home .labour{
-	background: var(--primary-2-light);
+	background: var(--white);
 	z-index: 1;
+	border-right: .61px solid lightgrey;
 }
 #home .labour:hover{
-	background: var(--primary-2);
-}
-#home .labour a:hover{
 	background: white;
-	color: var(--primary-2);
 }
 #home .labour .images img:nth-child(1){
 	display: block;
@@ -352,15 +336,11 @@ section{
 	right: -.5em;
 }
 #home .categories{
-	background: var(--primary-3-light);
+	background: var(--white);
 	z-index: 1;
 }
 #home .categories:hover{
-	background: var(--primary-3);
-}
-#home .categories a:hover{
 	background: white;
-	color: var(--primary-3);
 }
 #home .images{
 	width: 100%;
@@ -609,7 +589,6 @@ footer p{
 		padding: .3em;
 		height: 7em;
 		width: 50em;
-/*		word-wrap: break-word;*/
 		white-space: nowrap;
 		text-overflow: ellipsis;
 		overflow: hidden;
@@ -657,14 +636,6 @@ footer p{
 	 	font-size: 2em;
 		margin-top: 1em;
 	}
-	/*#home > div p{
-		font-size: 1.4em;
-		margin: .5em 0;
-		font-weight: 500;
-	}
-	#home > div .p-two{
-		font-size: 1em;
-	}*/
 }
 @media only screen and (max-width: 830px){
 	nav .links #signin-signup{

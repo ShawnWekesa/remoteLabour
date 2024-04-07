@@ -1,7 +1,7 @@
 console.log("hi");
 
 const searchBox = document.querySelector("#search");
-      searchIcon = document.querySelector(".search ion-icon");
+      searchIcon = document.querySelector(".search i");
       form = document.querySelector("form");
       nav = document.querySelector("nav");
       divs = document.querySelectorAll("section > div");
@@ -13,33 +13,45 @@ const searchBox = document.querySelector("#search");
 
 searchIcon.addEventListener("click", () =>{
 	searchBox.classList.toggle("hide");
-  logo.classList.toggle("hide");
+  if (searchIcon.classList.contains("bx-search")) {
+    searchIcon.classList.replace("bx-search", "bx-x");
+  }else{
+    searchIcon.classList.replace("bx-x", "bx-search");
+  }
 })
 
-divs.forEach(div => {
-  div.addEventListener('mouseenter', () => {
-    const backgroundColor = window.getComputedStyle(div).backgroundColor;
-    nav.style.backgroundColor = backgroundColor;
-    nav.style.boxShadow = 'none';
-  });
-});
+// divs.forEach(div => {
+//   div.addEventListener('mouseenter', () => {
+//     const backgroundColor = window.getComputedStyle(div).backgroundColor;
+//     nav.style.backgroundColor = backgroundColor;
+//     nav.style.boxShadow = 'none';
+//   });
+// });
 
-divs.forEach(div => {
-  div.addEventListener('mouseleave', () => {
-    nav.style.backgroundColor = 'white';
-    nav.style.boxShadow = '.1em .01em .3em .001em rgba(0, 0, 0, .5)'; 
-  });  
-});
+// divs.forEach(div => {
+//   div.addEventListener('mouseleave', () => {
+//     nav.style.backgroundColor = 'white';
+//     nav.style.boxShadow = '.1em .01em .3em .001em rgba(0, 0, 0, .5)'; 
+//   });  
+// });
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 0) {
-    nav.style.backgroundColor = 'white';
-    nav.style.boxShadow = '.1em .01em .3em .001em rgba(0, 0, 0, .5)'; 
-  } else {
-    nav.style.backgroundColor = ''; 
+let ticking = false;
+
+function handleScroll() {
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      if (window.scrollY > 0) {
+        nav.style.boxShadow = '.1em .01em .3em .001em rgba(0, 0, 0, .5)';
+      } else {
+        nav.style.boxShadow = 'none'; 
+      }
+      ticking = false;
+    });
+
+    ticking = true;
   }
-});
+}
 
-var lazyLoadInstance = new LazyLoad({
-    elements_selector: "img"
-  });
+window.addEventListener('scroll', handleScroll);
+
+
