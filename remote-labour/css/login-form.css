@@ -46,9 +46,13 @@ form{
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	background: var(--primary-3);
+	background: var(--white);
 	padding: 1em;
 	border-radius: .25em;
+	border: .61px solid lightgrey;
+}
+form:hover{
+	background: white;
 }
 form > div{
 	position: relative;
@@ -92,6 +96,7 @@ form button{
 }
 form button:hover{
 	background: var(--primary-3);
+	scale: 1.01;
 }
 .forgot-password button{
 	font-size: .9em;
