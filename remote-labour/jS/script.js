@@ -20,21 +20,6 @@ searchIcon.addEventListener("click", () =>{
   }
 })
 
-// divs.forEach(div => {
-//   div.addEventListener('mouseenter', () => {
-//     const backgroundColor = window.getComputedStyle(div).backgroundColor;
-//     nav.style.backgroundColor = backgroundColor;
-//     nav.style.boxShadow = 'none';
-//   });
-// });
-
-// divs.forEach(div => {
-//   div.addEventListener('mouseleave', () => {
-//     nav.style.backgroundColor = 'white';
-//     nav.style.boxShadow = '.1em .01em .3em .001em rgba(0, 0, 0, .5)'; 
-//   });  
-// });
-
 let ticking = false;
 
 function handleScroll() {
@@ -53,5 +38,3 @@ function handleScroll() {
 }
 
 window.addEventListener('scroll', handleScroll);
-
-
