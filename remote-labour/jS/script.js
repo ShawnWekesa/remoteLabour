@@ -22,7 +22,7 @@ searchIcon.addEventListener("click", () =>{
 
 let ticking = false;
 
-function handleScroll() {
+function navScroll() {
   if (!ticking) {
     window.requestAnimationFrame(() => {
       if (window.scrollY > 0) {
@@ -37,4 +37,4 @@ function handleScroll() {
   }
 }
 
-window.addEventListener('scroll', handleScroll);
+window.addEventListener('scroll', navScroll);
